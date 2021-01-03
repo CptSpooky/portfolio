@@ -7380,9 +7380,9 @@ md5.js@^1.3.4:
     inherits "^2.0.1"
     safe-buffer "^5.1.2"
 
-"mdbreact@git+https://oauth2:AiPxj19uzUVfszg7rSSz@git.mdbootstrap.com/mdb/react/re-pro.git":
+"mdbreact@git+https://oauth2:fstJUbMymV83RQ3GKsHS@git.mdbootstrap.com/mdb/react/re-pro.git":
   version "5.0.1"
-  resolved "git+https://oauth2:AiPxj19uzUVfszg7rSSz@git.mdbootstrap.com/mdb/react/re-pro.git#5a171b3ea8f82658a6ff802944370308c85762bf"
+  resolved "git+https://oauth2:fstJUbMymV83RQ3GKsHS@git.mdbootstrap.com/mdb/react/re-pro.git#5a171b3ea8f82658a6ff802944370308c85762bf"
   dependencies:
     "@date-io/moment" "1.3.5"
     "@fortawesome/fontawesome-free" "^5.12.0"
