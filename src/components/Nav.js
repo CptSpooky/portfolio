@@ -23,7 +23,7 @@ render() {
     return (
       <Router>
         <MDBContainer className="mobileNav" style={{ margin: "0px", width: "100%" }}>
-          <img alt="logo" src="./assets/logo.svg" className="rounded-circle" style={{ maxWidth: "50px"}} />
+          <img alt="logo" src="../assets/logo.svg" className="rounded-circle" style={{ maxWidth: "50px"}} />
           <MDBView hover onClick={this.sidenavToggle("Left")}>
             <MDBIcon className="hamburgerIcon" size="lg" icon="th" />
             <MDBMask overlay="indigo-light" />
