@@ -1,0 +1,151 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 5.2rem;
+  font-family: 'Pattaya', sans-serif;
+  color: #9A348E;
+}
+
+h2 {
+  font-size: 3.8rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+h3 {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: grey;
+  margin-top: 1em;
+}
+
+a:hover {
+  background-color: rgba(255,255,255,0.2);
+  transition-delay: 1s;
+  
+}
+
+.active  {
+  background-color: #9A348E;
+}
+
+.mainContainer {
+  height: 100vh;
+  width: 100%;
+  background-image: url(./assets/paperbg.jpg);
+  background-size: cover;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* Nav */
+.mobileNav {
+  visibility: hidden;
+  margin: 0px !important;
+  display: none;
+  min-width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0D0628;
+  z-index: -1;
+}
+
+.hamburgerIcon {
+  color: white;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navBG {
+
+}
+
+.navOverlay {
+  background-color: #0D0628 !important;
+}
+
+.side-nav {
+  background-color: #0D0628 !important;
+}
+
+.socialIcons {
+  color: white !important;
+}
+
+ul {
+  height: 90% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+/* Home */
+
+.introText {
+  width: 40%;
+  max-height: 90%;
+  margin-left: 4em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.portrait {
+  max-width: 90%;
+  max-height: 700px;
+  padding: 15px;
+}
+
+/* About */
+
+
+/* Portfolio */
+.WebDevProjectList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Portfolio {
+  width: 100%;
+  background-color: grey;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Contact */
+#Contact {
+  width: 100%;
+  height: 1000px;
+  background-color: blue;
+}
+
+@media only screen and (max-width: 720px) {
+  
+  /* Nav */
+  .mobileNav {
+    display: flex;
+    visibility: visible;
+  }
+
+  /* Home */
+  .introText {
+    margin-left: 0px;
+  }
+}
