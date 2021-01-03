@@ -41,7 +41,7 @@ render() {
           </li>
           
           <MDBSideNavNav>
-              <MDBSideNavLink to="/" exact className="Ripple-parent">
+              <MDBSideNavLink to="/home" exact className="Ripple-parent">
                 <MDBIcon icon="home" className="mr-2" />
                   Home
               </MDBSideNavLink>
@@ -81,7 +81,7 @@ render() {
           </div>
         </MDBSideNav>
 
-        <Route path="/" exact component={Home} />
+        <Route path="/home" exact component={Home} />
         <Route path="/about" exact component={About} />
         <Route path="/skills" exact component={Skills} />
         <Route path="/portfolio" exact component={Portfolio} />

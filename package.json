@@ -2,7 +2,7 @@
   "name": "your-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://CptSpooky.github.io/",
+  "homepage": "https://CptSpooky.github.io/home",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
     "bootstrap": "^4.5.3",
