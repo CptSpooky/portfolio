@@ -1,6 +1,6 @@
 import React from 'react';
 import { MDBAnimation } from "mdbreact";
-
+import Portrait from '../assets/portrait.svg';
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
         </MDBAnimation>
       </div>
       <MDBAnimation type="bounceIn" duration="1s" >
-          <img alt="portrait" src="../assets/portrait.svg" className="portrait"/>
+          <img alt="portrait" src={Portrait} className="portrait"/>
       </MDBAnimation>
     </div>
   )
