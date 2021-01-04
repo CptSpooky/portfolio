@@ -27,6 +27,10 @@ a:hover {
   
 }
 
+.overflow-y-scroll {
+  overflow-y: hidden !important;
+}
+
 .active  {
   background-color: #9A348E;
 }
@@ -40,7 +44,30 @@ a:hover {
   overflow-y: hidden;
 }
 
+.d-inline {
+  display: inline;
+}
+
+.drkGrey {
+  color: #303030ff;
+}
+
+.fontL {
+  font-weight: lighter;
+}
+
+.lineHeight {
+  line-height: 1.4em;
+}
+
 /* Nav */
+ul {
+  height: 90% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
 .mobileNav {
   visibility: hidden;
   margin: 0px !important;
@@ -78,15 +105,8 @@ a:hover {
   color: white !important;
 }
 
-ul {
-  height: 90% !important;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: space-between !important;
-}
 
 /* Home */
-
 .introText {
   width: 40%;
   max-height: 90%;
@@ -113,20 +133,20 @@ ul {
   align-items: center;
 }
 
+.halfContainer {
+  width: 50%;
+  display: flex !important;
+  padding: 2em;
+}
+
 .col {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#Portfolio {
-  width: 100%;
-  background-color: grey;
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.projectCard {
+  max-width: 300px;
 }
 
 /* Contact */
@@ -147,5 +167,11 @@ ul {
   /* Home */
   .introText {
     margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 1329px) {
+  .halfContainer {
+    width: 100%;
   }
 }

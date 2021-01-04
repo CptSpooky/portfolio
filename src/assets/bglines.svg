@@ -18,7 +18,10 @@
    enable-background="new 0 0 1400 980"
    xml:space="preserve"
    sodipodi:docname="bglines.svg"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"><metadata
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   inkscape:export-filename="/home/spooky/Desktop/bglines.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"><metadata
    id="metadata377"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
@@ -78,7 +81,7 @@
    id="namedview373"
    showgrid="false"
    inkscape:zoom="0.74857143"
-   inkscape:cx="813.22147"
+   inkscape:cx="809.21384"
    inkscape:cy="509.84482"
    inkscape:window-x="0"
    inkscape:window-y="0"

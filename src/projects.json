@@ -1,0 +1,35 @@
+[
+    {
+        "id": 0,
+        "title": "Pawsibilities",
+        "description": "Spearheaded the PetFinder API portion of this app with Javascript/ JQuery and Ajax in a team environment to create a pet application.",
+        "deployed": "https://cptspooky.github.io/Pawsibility",
+        "github":"https://github.com/CptSpooky/Pawsibility",
+        "image": "https://i.imgur.com/TOUgKFU.jpg"
+    },
+    {
+        "id": 1,
+        "title": "Weather Dashboard",
+        "description": "Created a user-search weather dashboard using Javascript/JQuery/ Ajax, the open weather and open UV APIs.",
+        "deployed": "https://cptspooky.github.io/Weather-Dashboard/",
+        "github":"https://github.com/CptSpooky/Weather-Dashboard",
+        "image": "https://i.imgur.com/1COerWf.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Work Day Scheduler",
+        "description": "A color coded event-saving day planner created with javascript and JQuery.",
+        "deployed": "https://cptspooky.github.io/Work-Day-Scheduler/",
+        "github":"https://github.com/CptSpooky/Work-Day-Scheduler",
+        "image": "https://i.imgur.com/PioVHdV.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Pixel Patch",
+        "description": "A pumpkin stencil app where you can create your own stencils and print them out. Utilizes Express, Node, Jquery/Javascript, MySQL/sequelize, Ajax and some authentication dependencies.",
+        "deployed": "https://project-2-team6.herokuapp.com/",
+        "github":"https://github.com/SeanPCummings/Project-2",
+        "image": "https://i.imgur.com/m3OHwvo.jpg"
+    }
+
+]
