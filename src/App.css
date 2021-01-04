@@ -149,6 +149,12 @@ ul {
   max-width: 300px;
 }
 
+.closeButton {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
 /* Contact */
 #Contact {
   width: 100%;

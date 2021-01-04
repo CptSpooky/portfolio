@@ -5,7 +5,10 @@
         "description": "Spearheaded the PetFinder API portion of this app with Javascript/ JQuery and Ajax in a team environment to create a pet application.",
         "deployed": "https://cptspooky.github.io/Pawsibility",
         "github":"https://github.com/CptSpooky/Pawsibility",
-        "image": "https://i.imgur.com/TOUgKFU.jpg"
+        "image": "https://i.imgur.com/TOUgKFU.jpg",
+        "cimage1": "https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg",
+        "cimage2": "https://mdbootstrap.com/img/Photos/Slides/img%20(131).jpg",
+        "cimage3": "https://mdbootstrap.com/img/Photos/Slides/img%20(132).jpg"
     },
     {
         "id": 1,
@@ -13,7 +16,10 @@
         "description": "Created a user-search weather dashboard using Javascript/JQuery/ Ajax, the open weather and open UV APIs.",
         "deployed": "https://cptspooky.github.io/Weather-Dashboard/",
         "github":"https://github.com/CptSpooky/Weather-Dashboard",
-        "image": "https://i.imgur.com/1COerWf.jpg"
+        "image": "https://i.imgur.com/1COerWf.jpg",
+        "cimage1": "https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg",
+        "cimage2": "https://mdbootstrap.com/img/Photos/Slides/img%20(131).jpg",
+        "cimage3": "https://mdbootstrap.com/img/Photos/Slides/img%20(132).jpg"
     },
     {
         "id": 2,
@@ -21,7 +27,10 @@
         "description": "A color coded event-saving day planner created with javascript and JQuery.",
         "deployed": "https://cptspooky.github.io/Work-Day-Scheduler/",
         "github":"https://github.com/CptSpooky/Work-Day-Scheduler",
-        "image": "https://i.imgur.com/PioVHdV.jpg"
+        "image": "https://i.imgur.com/PioVHdV.jpg",
+        "cimage1": "https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg",
+        "cimage2": "https://mdbootstrap.com/img/Photos/Slides/img%20(131).jpg",
+        "cimage3": "https://mdbootstrap.com/img/Photos/Slides/img%20(132).jpg"
     },
     {
         "id": 3,
@@ -29,7 +38,10 @@
         "description": "A pumpkin stencil app where you can create your own stencils and print them out. Utilizes Express, Node, Jquery/Javascript, MySQL/sequelize, Ajax and some authentication dependencies.",
         "deployed": "https://project-2-team6.herokuapp.com/",
         "github":"https://github.com/SeanPCummings/Project-2",
-        "image": "https://i.imgur.com/m3OHwvo.jpg"
+        "image": "https://i.imgur.com/m3OHwvo.jpg",
+        "cimage1": "https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg",
+        "cimage2": "https://mdbootstrap.com/img/Photos/Slides/img%20(131).jpg",
+        "cimage3": "https://mdbootstrap.com/img/Photos/Slides/img%20(132).jpg"
     }
 
 ]
