@@ -2,46 +2,122 @@
     {
         "id": 0,
         "title": "Pawsibilities",
-        "description": "Spearheaded the PetFinder API portion of this app with Javascript/ JQuery and Ajax in a team environment to create a pet application.",
+        "role": "Web Development",
+        "description": "Tackled the PetFinder API portion of this app with JavaScript/JQuery and Ajax in a team environment to create a pet application where users could find adoptable dogs and cats in their area.",
         "deployed": "https://cptspooky.github.io/Pawsibility",
         "github":"https://github.com/CptSpooky/Pawsibility",
         "image": "https://i.imgur.com/TOUgKFU.jpg",
-        "cimage1": "https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg",
-        "cimage2": "https://mdbootstrap.com/img/Photos/Slides/img%20(131).jpg",
-        "cimage3": "https://mdbootstrap.com/img/Photos/Slides/img%20(132).jpg"
+        "cimage1": "https://i.imgur.com/VLo9JrV.png",
+        "cimage2": "https://i.imgur.com/NffNanL.png",
+        "cimage3": "https://i.imgur.com/bhBbzKv.png"
     },
     {
         "id": 1,
         "title": "Weather Dashboard",
+        "role": "Web Development",
         "description": "Created a user-search weather dashboard using Javascript/JQuery/ Ajax, the open weather and open UV APIs.",
         "deployed": "https://cptspooky.github.io/Weather-Dashboard/",
         "github":"https://github.com/CptSpooky/Weather-Dashboard",
         "image": "https://i.imgur.com/1COerWf.jpg",
-        "cimage1": "https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg",
-        "cimage2": "https://mdbootstrap.com/img/Photos/Slides/img%20(131).jpg",
-        "cimage3": "https://mdbootstrap.com/img/Photos/Slides/img%20(132).jpg"
+        "cimage1": "https://i.imgur.com/v97KDj6.png",
+        "cimage2": "https://i.imgur.com/iY4poUg.png",
+        "cimage3": "https://i.imgur.com/eNrjae2.png"
     },
     {
         "id": 2,
         "title": "Work Day Scheduler",
-        "description": "A color coded event-saving day planner created with javascript and JQuery.",
+        "role": "Web Development",
+        "description": "A simple color coded event-saving day planner created with javascript and JQuery.",
         "deployed": "https://cptspooky.github.io/Work-Day-Scheduler/",
         "github":"https://github.com/CptSpooky/Work-Day-Scheduler",
         "image": "https://i.imgur.com/PioVHdV.jpg",
-        "cimage1": "https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg",
-        "cimage2": "https://mdbootstrap.com/img/Photos/Slides/img%20(131).jpg",
-        "cimage3": "https://mdbootstrap.com/img/Photos/Slides/img%20(132).jpg"
+        "cimage1": "./assets/paw_1.png",
+        "cimage2": "./assets/paw_2.png",
+        "cimage3": "./assets/paw_3.png"
     },
     {
         "id": 3,
         "title": "Pixel Patch",
-        "description": "A pumpkin stencil app where you can create your own stencils and print them out. Utilizes Express, Node, Jquery/Javascript, MySQL/sequelize, Ajax and some authentication dependencies.",
+        "role": "Web Development",
+        "description": "A pumpkin stencil app where users can create their own stencils and print them out. Focused heavily on illustrating and coding most of the front end as well as back end. Utilizes Express, Node, Jquery/JavaScript, MySQL/sequelize, Ajax and Passport.",
         "deployed": "https://project-2-team6.herokuapp.com/",
         "github":"https://github.com/SeanPCummings/Project-2",
         "image": "https://i.imgur.com/m3OHwvo.jpg",
-        "cimage1": "https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg",
-        "cimage2": "https://mdbootstrap.com/img/Photos/Slides/img%20(131).jpg",
-        "cimage3": "https://mdbootstrap.com/img/Photos/Slides/img%20(132).jpg"
+        "cimage1": "https://i.imgur.com/ovvEFEV.png",
+        "cimage2": "https://i.imgur.com/nseksEV.png",
+        "cimage3": "https://i.imgur.com/KNEEE6H.png"
+    },
+    {
+        "id": 4,
+        "title": "DBUG ME",
+        "role": "Web Development",
+        "description": "DBugMe is a public platform curated for up and coming developers, it allows the user to save important posts on their profile. DBugMe also allows the user to connect with a mentor to help work through problems. The App can be used to share one’s knowledge and collaborate with other developers while learning new tips and tricks. Built alongside a team where I led front end with ReactJS, Create-React-App, and Bootstrap-React. Back end utilized MongoDB, Mongoose, and several authenticator libraries.",
+        "deployed": "https://dbugme.herokuapp.com/",
+        "github":"https://github.com/jesseodonoghue/project-3",
+        "image": "https://i.imgur.com/Ra4ygrT.png",
+        "cimage1": "https://i.imgur.com/1WUOSrc.png",
+        "cimage2": "https://i.imgur.com/9KKQtVv.png",
+        "cimage3": "https://i.imgur.com/pFXXTcI.png"
+    },
+    {
+        "id": 5,
+        "title": "Sensient Pharma",
+        "role": "Web Development",
+        "description": "A series of blogs designed and coded for Sensient Pharmaceutical. Utilized html, css, wordpress, and php.",
+        "deployed": "https://sensientpharma.com/health-and-wellness/",
+        "github":"",
+        "image": "https://i.imgur.com/kyEbw6j.png",
+        "cimage1": "https://i.imgur.com/23A4ju8.png",
+        "cimage2": "https://i.imgur.com/s7fFtHW.png",
+        "cimage3": "https://i.imgur.com/WRpopmC.png"
+    },
+    {
+        "id": 6,
+        "title": "LinkedIn's Organic and Paid eBook",
+        "role": "Graphic Design",
+        "description": "Designed and illustrated an ebook for LinkedIn to help marketers drive engagement through both organic and paid opportunities. Visually directed by the concept of meshing natural(organic) and manmade(paid) objects/architecture.",
+        "deployed": "https://business.linkedin.com/marketing-solutions/blog/linkedin-b2b-marketing/2018/introducing-the-organic---paid-playbook",
+        "github":"",
+        "image": "https://i.imgur.com/NmFHHxA.png",
+        "cimage1": "https://i.imgur.com/NmFHHxA.png",
+        "cimage2": "https://i.imgur.com/N5WLe5i.png",
+        "cimage3": "https://i.imgur.com/gNi2svT.png"
+    },
+    {
+        "id": 7,
+        "title": "Microsoft's The Innovator's Guide to Smarter Collaboration",
+        "role": "Graphic Design",
+        "description": "Designed and illustrated an ebook for Microsoft taking a look at how different businesses are utilizing Microsoft tools to empower their workforce and foster collaboration.",
+        "deployed": "https://www.techrepublic.com/index.php/resource-library/whitepapers/innovator-s-guide-to-smarter-collaboration/",
+        "github":"https://www.techrepublic.com/index.php/resource-library/whitepapers/innovator-s-guide-to-smarter-collaboration/",
+        "image": "https://i.imgur.com/WmtfWtJ.png",
+        "cimage1": "https://i.imgur.com/WmtfWtJ.png",
+        "cimage2": "https://i.imgur.com/UqrBmrG.png",
+        "cimage3": "https://i.imgur.com/UB61Z7m.png"
+    },
+    {
+        "id": 8,
+        "title": "Microsoft's 5 Ways Azure AI helps you drive innovation",
+        "role": "Graphic Design",
+        "description": "Designed and illustrated an infographic for Microsoft Azure that demonstrates ways AI can benefit humanity.",
+        "deployed": "",
+        "github":"",
+        "image": "https://i.imgur.com/JSjiUNO.png",
+        "cimage1": "https://i.imgur.com/JSjiUNO.png",
+        "cimage2": "https://i.imgur.com/L4nQN1P.png",
+        "cimage3": "https://i.imgur.com/jxD1lmN.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Microsoft's The Data Expedition Roll Call",
+        "role": "Graphic Design",
+        "description": "Designed and illustrated an infographic for Microsoft Azure that demonstrates ways AI can benefit humanity.",
+        "deployed": "",
+        "github":"",
+        "image": "https://i.imgur.com/R8zsLcr.png",
+        "cimage1": "https://i.imgur.com/4rm0vMB.png",
+        "cimage2": "https://i.imgur.com/mYld2VY.png",
+        "cimage3": "https://i.imgur.com/8xfauFD.jpg"
     }
 
 ]

@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 h1 {
@@ -19,6 +20,21 @@ h3 {
   font-weight: 500;
   color: grey;
   margin-top: 1em;
+}
+
+h4 {
+  font-weight: bold !important;
+  margin-top: 1em;
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+p {
+  font-weight: bold;
+  margin: 0px !important;
 }
 
 a:hover {
@@ -41,7 +57,6 @@ a:hover {
   background-image: url(./assets/paperbg.jpg);
   background-size: cover;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 .d-inline {
@@ -57,8 +72,35 @@ a:hover {
 }
 
 .lineHeight {
-  line-height: 1.4em;
+  line-height: 1.5em;
 }
+
+.rgba-purple-strong {
+  background-color: rgba(13, 6, 40, 0.9) !important;
+}
+
+.fullwidth {
+  width: 100% !important;
+}
+
+.mt-0 {
+  margin-top: 0px !important;
+}
+
+.bullet-font {
+  font-size: .9rem;
+  line-height: 1.4rem !important;
+}
+
+.rgba-black-light {
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
+  background-color: none !important;
+}
+
+.rgba-black-light:after {
+  background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,.5)) !important;
+  background-color: none !important;
+} */
 
 /* Nav */
 ul {
@@ -67,6 +109,14 @@ ul {
   flex-direction: column !important;
   justify-content: space-between !important;
 }
+
+.list-unstyled {
+  height: 90% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
 
 .mobileNav {
   visibility: hidden;
@@ -105,6 +155,22 @@ ul {
   color: white !important;
 }
 
+.padding {
+  padding: 2em;
+}
+
+.bullets {
+  color: #9A348E;
+  padding-right: 0px !important;
+}
+
+.no-flex-wrap {
+  flex-wrap: none !important;
+}
+
+.col-1 {
+  padding-right: 0px !important;
+}
 
 /* Home */
 .introText {
@@ -139,6 +205,10 @@ ul {
   padding: 2em;
 }
 
+.halfContainer-margin {
+  padding-right: 5em;
+}
+
 .col {
   display: flex;
   justify-content: center;
@@ -146,13 +216,31 @@ ul {
 }
 
 .projectCard {
-  max-width: 300px;
+  max-width: 286px;
+  max-height: 159px;
+  overflow: hidden;
+  margin: 5px;
 }
 
 .closeButton {
   position: absolute;
   top: 0%;
   right: 0%;
+}
+
+.projectText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-height: 159px;
+}
+
+.view-img {
+  background-color: white;
 }
 
 /* Contact */
@@ -174,9 +262,15 @@ ul {
   .introText {
     margin-left: 0px;
   }
+
+  /* Portfolio */
+  .halfContainer-margin {
+    margin-bottom: 4em;
+    padding-right: 32px;
+  }
 }
 
-@media only screen and (max-width: 1329px) {
+@media only screen and (max-width: 1425px) {
   .halfContainer {
     width: 100%;
   }
