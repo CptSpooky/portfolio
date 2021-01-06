@@ -185,50 +185,10 @@ ul {
   padding-right: 0px !important;
 }
 
-/* Skills Card */
-.c {
-  position: absolute;
-  max-width: 100%;
-  cursor: pointer;
-  will-change: transform, opacity;
-}
-
-.front,
-.back {
-  background-size: cover;
-  max-width: 300px;
-  min-width: 100%;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 70px;
-}
-
-.back {
-  background-color: #9A348E;
-  background-image: url(https://i.imgur.com/SUExo45.png);
-}
-.back:hover {
-  background-image: white;
-}
-
-.front {
-  background-color:rgba(13, 6, 40, 0.9);
-}
-
-.skillsCardPadding {
-  padding: 5px;
-}
-
-.skillsCardColPadding {
-  padding: 7em, 7em, 7em, 7em !important;
-}
-
 /* Home */
 .introText {
   width: 40%;
-  max-height: 90%;
+  
   margin-left: 4em;
   margin-top: 2em;
   margin-bottom: 2em;
@@ -241,6 +201,16 @@ ul {
 }
 
 /* About */
+.absoluteBottom {
+  position: absolute;
+  bottom: 0;
+}
+
+/* Education */
+.imagePos {
+  position: absolute;
+  bottom: -4em;
+}
 
 
 /* Portfolio */
@@ -296,12 +266,6 @@ ul {
   background-color: white;
 }
 
-/* Contact */
-#Contact {
-  width: 100%;
-  height: 1000px;
-  background-color: blue;
-}
 
 @media only screen and (max-width: 720px) {
   

@@ -1,5 +1,6 @@
 import React from 'react';
 import { MDBAnimation, MDBCol, MDBRow, MDBIcon } from "mdbreact";
+import SVG from "../assets/education.svg";
 
 export default function Education() {
   return (
@@ -15,7 +16,7 @@ export default function Education() {
                 </MDBAnimation>
               </MDBCol>
             </MDBRow>
-            <MDBAnimation type="fadeIn" delay="900ms" duration="2s" >
+            <MDBAnimation type="fadeInLeft" delay="100ms" duration="1.5s" >
               <MDBRow>
                 <MDBCol md='12' className='d-flex'>
                   <h4 className="drkGrey fontL">Certificate in Full Stack Web Development</h4>
@@ -32,7 +33,7 @@ export default function Education() {
                 </MDBCol>
               </MDBRow>
             </MDBAnimation>
-            <MDBAnimation type="fadeIn" delay="900ms" duration="2s" >
+            <MDBAnimation type="fadeInLeft" delay="200ms" duration="1.5s" >
               <MDBRow>
                 <MDBCol md='12' className='d-flex'>
                   <h4 className="drkGrey fontL">Internship at the Inspiration Network</h4>
@@ -49,7 +50,7 @@ export default function Education() {
                 </MDBCol>
               </MDBRow>
             </MDBAnimation>
-            <MDBAnimation type="fadeIn" delay="900ms" duration="2s" >
+            <MDBAnimation type="fadeInLeft" delay="300ms" duration="1.5s" >
               <MDBRow>
                 <MDBCol md='12' className='d-flex'>
                   <h4 className="drkGrey fontL">Bachelor of Fine Arts</h4>
@@ -69,10 +70,9 @@ export default function Education() {
           </div>
         </MDBCol>
         <MDBCol md="6" className="d-flex align-items-center justify-content-center skillsCardColPadding padding fullVHeight f-direction-column">
-        
-
-
-        
+          <MDBAnimation type="bounceInUp" delay="100ms" duration="1.5s" className="fullheight fullwidth" >
+            <img src={SVG} alt="me" className="portrait imagePos" style={{ paddingBottom: "0px" }} />
+          </MDBAnimation>   
         </MDBCol>
       </MDBRow>
   </div>
