@@ -4,11 +4,11 @@ import SVG from "../assets/about.svg";
 
 export default function About() {
   return (
-    <div className="mainContainer d-flex align-items-center justify-content-center flex-wrap">
-      <div className="introText" style={{ textAlign: "center" }}>
-        <MDBAnimation type="zoomIn" duration=".7s">
-          <h2 className="d-inline">About</h2>
-          <h1 className="ml-4 d-inline">Me</h1>
+    <div className="mainContainer d-flex align-items-center justify-content-center flex-wrap overflowAbout">
+      <div className="introText" style={{ textAlign: "center", marginLeft: "0px" }}>
+        <MDBAnimation type="zoomIn" duration=".7s" className="d-flexwrap-center">
+          <h2>About </h2>
+          <h1 className="ml-2">Me</h1>
         </MDBAnimation>
         <MDBAnimation type="zoomIn" delay="500ms" duration="2s" >
           <h3 className="drkGrey fontL lineHeight">Highly-motivated remote Full Stack Web Developer with a background in Graphic Design. Effective at problem solving and weaving in creativity with function. Known among coworkers and clients for being versatile and reliable, works well both individually led and in a team environment.</h3>
@@ -20,7 +20,7 @@ export default function About() {
           <h4 className="drkGrey fontL" style={{ marginTop: "30px", marginBottom: "20px"}}>Get to know me!</h4>        
         </MDBAnimation>
 
-        <MDBRow className="text-center fullwidth">
+        <MDBRow className="text-center fullwidth" id="contact">
           <MDBCol md="3">
             <MDBAnimation type="bounceIn" delay="800ms" duration="2s" >
               <a href="https://github.com/CptSpooky" target="blank">
@@ -60,8 +60,8 @@ export default function About() {
           </MDBCol>
         </MDBRow>
       </div>
-      <MDBRow className="fullwidth">
-        <MDBAnimation type="slideInUp fullwidth d-flex justify-content-center flex-end" style={{ marginBottom: "-2rem" }} delay="950ms" duration="2s" >
+      <MDBRow className="fullwidth fullwidth d-flex justify-content-center flex-end">
+        <MDBAnimation type="slideInUp" style={{ marginBottom: "-2rem" }} delay="950ms" duration="2s" >
           <img src={SVG} alt="me again" className="portrait fullwidth" style={{ paddingBottom: "0px", maxHeight: "335px" }} />
         </MDBAnimation>
       </MDBRow>

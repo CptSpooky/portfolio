@@ -5,14 +5,14 @@ import SVG from "../assets/education.svg";
 export default function Education() {
   return (
     <div className="mainContainer d-flex align-items-center justify-content-center flex-wrap">
-      <MDBRow>
-        <MDBCol md="6" className="d-flex align-items-center justify-content-center padding">
+      <MDBRow className="align-items-center">
+        <MDBCol md="6" className="d-flex align-items-center justify-content-center edupadding">
           <div className="introText fullwidth padding">
             <MDBRow>
               <MDBCol md='12' className='d-flex'>
-                <MDBAnimation type="slideInLeft" duration="1s">
-                  <h2 className="d-inline">My</h2>
-                  <h1 className="ml-4 d-inline">Education</h1>
+                <MDBAnimation type="slideInLeft" duration="1s" className="d-flexwrap">
+                  <h2>My</h2>
+                  <h1 className="educationText">Education</h1>
                 </MDBAnimation>
               </MDBCol>
             </MDBRow>
@@ -69,9 +69,9 @@ export default function Education() {
             </MDBAnimation>
           </div>
         </MDBCol>
-        <MDBCol md="6" className="d-flex align-items-center justify-content-center skillsCardColPadding padding fullVHeight f-direction-column">
-          <MDBAnimation type="bounceInUp" delay="100ms" duration="1.5s" className="fullheight fullwidth" >
-            <img src={SVG} alt="me" className="portrait imagePos" style={{ paddingBottom: "0px" }} />
+        <MDBCol md="6" className="d-flex align-items-center justify-content-center padding fullVHeightEdu f-direction-column">
+          <MDBAnimation type="bounceInUp" delay="100ms" duration="1.5s" className="fullheight fullwidth d-flex align-items-center justify-content-center" >
+            <img src={SVG} alt="me" className="portrait" style={{ paddingBottom: "0px" }} />
           </MDBAnimation>   
         </MDBCol>
       </MDBRow>

@@ -6,13 +6,13 @@ import portProjects from '../projects.json';
 export default function Portfolio() {
   return (
     <div className="mainContainer d-flex align-items-center justify-content-center flex-wrap">
-      <div className="halfContainer d-flex align-items-center justify-content-center">
+      <div className="halfContainer d-flex align-items-center justify-content-center halfContainer-padding padding-0">
           <div className="introText fullwidth padding">
             <MDBRow>
               <MDBCol md='12' className='d-flex'>
-                <MDBAnimation type="slideInLeft" duration="1s">
-                  <h2 className="d-inline">Work &</h2>
-                  <h1 className="ml-4 d-inline">Experience</h1>
+                <MDBAnimation type="slideInLeft" duration="1s" className="d-flexwrap">
+                  <h2>Work&</h2>
+                  <h1 className="educationText">Experience</h1>
                 </MDBAnimation>
               </MDBCol>
             </MDBRow>
@@ -85,7 +85,7 @@ export default function Portfolio() {
           </div>
         </div>
         
-        <div className="halfContainer halfContainer-margin">
+        <div className="halfContainer halfContainer-padding halfContainer-margin">
           <div className="WebDevProjectList">
             <ProjectCard projects={portProjects}/>
           </div>

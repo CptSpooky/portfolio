@@ -33,6 +33,7 @@ h5 {
 }
 
 p {
+  font-size: .8rem;
   font-weight: bold;
   margin: 0px !important;
 }
@@ -59,8 +60,18 @@ a:hover {
   overflow-x: hidden;
 }
 
-.d-inline {
-  display: inline;
+.d-flexwrap-center {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.d-flexwrap{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: left;
 }
 
 .drkGrey {
@@ -88,6 +99,10 @@ a:hover {
 }
 
 .fullVHeight {
+  height: 100vh !important;
+}
+
+.fullVHeightEdu {
   height: 100vh !important;
 }
 
@@ -188,7 +203,6 @@ ul {
 /* Home */
 .introText {
   width: 40%;
-  
   margin-left: 4em;
   margin-top: 2em;
   margin-bottom: 2em;
@@ -206,12 +220,23 @@ ul {
   bottom: 0;
 }
 
+.overflowAbout {
+  overflow: hidden;
+}
+
 /* Education */
 .imagePos {
   position: absolute;
   bottom: -4em;
 }
 
+.edupadding {
+  padding: 2em;
+}
+
+.educationText {
+  margin-left: .5rem !important;
+}
 
 /* Portfolio */
 .WebDevProjectList {
@@ -225,11 +250,14 @@ ul {
 .halfContainer {
   width: 50%;
   display: flex !important;
-  padding: 2em;
+}
+
+.halfContainer-padding {
+  padding: 1em;
 }
 
 .halfContainer-margin {
-  padding-right: 5em;
+  margin-bottom: 0;
 }
 
 .col {
@@ -266,9 +294,75 @@ ul {
   background-color: white;
 }
 
+@media only screen and (max-width: 300px) {
+  .fullVHeightEdu {
+    height: 30vh !important;
+  }
+}
+
+@media only screen and (max-width: 643px) {
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  h6 {
+    font-size: .9rem;
+  }
+
+  .row {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .introText {
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .portrait {
+    margin-bottom: 2rem;
+  }
+
+  .col-1 {
+    max-width: 100%;
+  }
+
+  .padding-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+  .overflowAbout {
+    overflow-y: visible !important;
+  }
+}
+
 
 @media only screen and (max-width: 720px) {
-  
+
   /* Nav */
   .mobileNav {
     display: flex;
@@ -283,7 +377,23 @@ ul {
   /* Portfolio */
   .halfContainer-margin {
     margin-bottom: 4em;
-    padding-right: 32px;
+  }
+
+  /* Education */
+  .edupadding {
+    padding: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 912px) {
+  #contact {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .educationText {
+    margin-left: 0px !important;
   }
 }
 
