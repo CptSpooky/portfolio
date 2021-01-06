@@ -3,9 +3,8 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { MDBSideNavNav, MDBSideNav, MDBSideNavLink, MDBContainer, MDBIcon, MDBView, MDBMask } from "mdbreact";
 import Home from './Home';
 import About from './About';
-import Skills from './Skills';
+import Education from './Education';
 import Portfolio from './Portfolio';
-import Contact from './Contact';
 import Logo from "../assets/logo.svg";
 
 class SideNav extends Component {
@@ -52,19 +51,14 @@ render() {
                   About
               </MDBSideNavLink>
 
-              <MDBSideNavLink to="/skills">
+              <MDBSideNavLink to="/education">
                 <MDBIcon icon="tools" className="mr-2" />
-                  Skills
+                  Education
               </MDBSideNavLink>
 
               <MDBSideNavLink to="/mywork">
                 <MDBIcon icon="eye" className="mr-2" />
                   My Work
-              </MDBSideNavLink>
-
-              <MDBSideNavLink to="/contact">
-                <MDBIcon icon="envelope" className="mr-2" />
-                  Contact Me
               </MDBSideNavLink>
           </MDBSideNavNav>
 
@@ -84,10 +78,8 @@ render() {
 
         <Route path="/portfolio" exact component={Home} />
         <Route path="/about" exact component={About} />
-        <Route path="/skills" exact component={Skills} />
+        <Route path="/education" exact component={Education} />
         <Route path="/mywork" exact component={Portfolio} />
-        <Route path="/contact" exact component={Contact} />
-
       </Router>
 
 

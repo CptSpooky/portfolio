@@ -83,6 +83,14 @@ a:hover {
   width: 100% !important;
 }
 
+.fullheight {
+  height: 100% !important;
+}
+
+.fullVHeight {
+  height: 100vh !important;
+}
+
 .mt-0 {
   margin-top: 0px !important;
 }
@@ -100,7 +108,11 @@ a:hover {
 .rgba-black-light:after {
   background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,.5)) !important;
   background-color: none !important;
-} */
+}
+
+.f-direction-column {
+  flex-direction: column;
+}
 
 /* Nav */
 ul {
@@ -155,6 +167,7 @@ ul {
   color: white !important;
 }
 
+/* Skills */ 
 .padding {
   padding: 2em;
 }
@@ -170,6 +183,46 @@ ul {
 
 .col-1 {
   padding-right: 0px !important;
+}
+
+/* Skills Card */
+.c {
+  position: absolute;
+  max-width: 100%;
+  cursor: pointer;
+  will-change: transform, opacity;
+}
+
+.front,
+.back {
+  background-size: cover;
+  max-width: 300px;
+  min-width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 70px;
+}
+
+.back {
+  background-color: #9A348E;
+  background-image: url(https://i.imgur.com/SUExo45.png);
+}
+.back:hover {
+  background-image: white;
+}
+
+.front {
+  background-color:rgba(13, 6, 40, 0.9);
+}
+
+.skillsCardPadding {
+  padding: 5px;
+}
+
+.skillsCardColPadding {
+  padding: 7em, 7em, 7em, 7em !important;
 }
 
 /* Home */
