@@ -130,8 +130,8 @@ a:hover {
 }
 
 .closeBtnFloat {
-  float: right;
-  position: absolute;
+  float: right !important;
+  position: absolute !important;
 }
 
 /* Nav */
