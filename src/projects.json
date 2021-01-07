@@ -31,9 +31,9 @@
         "deployed": "https://cptspooky.github.io/Work-Day-Scheduler/",
         "github":"https://github.com/CptSpooky/Work-Day-Scheduler",
         "image": "https://i.imgur.com/PioVHdV.jpg",
-        "cimage1": "./assets/paw_1.png",
-        "cimage2": "./assets/paw_2.png",
-        "cimage3": "./assets/paw_3.png"
+        "cimage1": "https://i.imgur.com/zND1pIk.png",
+        "cimage2": "https://i.imgur.com/PZFIFb3.png",
+        "cimage3": "https://i.imgur.com/m3lzky9.png"
     },
     {
         "id": 3,

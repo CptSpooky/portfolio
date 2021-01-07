@@ -129,6 +129,11 @@ a:hover {
   flex-direction: column;
 }
 
+.closeBtnFloat {
+  float: right;
+  position: absolute;
+}
+
 /* Nav */
 ul {
   height: 90% !important;
@@ -245,6 +250,7 @@ ul {
   width: 100%;
   justify-content: center;
   align-items: center;
+  margin-left: 3.5rem;
 }
 
 .halfContainer {
@@ -377,6 +383,10 @@ ul {
   /* Portfolio */
   .halfContainer-margin {
     margin-bottom: 4em;
+  }
+
+  .WebDevProjectList {
+    margin-left: 0px;
   }
 
   /* Education */

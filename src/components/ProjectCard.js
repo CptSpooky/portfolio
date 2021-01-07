@@ -93,7 +93,7 @@ class ProjectCard extends Component {
               </MDBCarouselInner>
             </MDBCarousel>
 
-            <MDBBtn tag="a" size="sm" floating gradient="none" className="closeButton z-depth-1" onClick={this.toggle(14)}>
+            <MDBBtn tag="a" size="sm" floating gradient="none" className="closeButton z-depth-1 closeBtnFloat" onClick={this.toggle(14)}>
               <MDBIcon icon="times" style={{ color: "#ccccccff"}} className="z-depth-2" />
             </MDBBtn>
             

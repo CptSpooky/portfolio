@@ -76,6 +76,7 @@ render() {
           </div>
         </MDBSideNav>
 
+        <Route path="/" exact component={Home} />
         <Route path="/portfolio" exact component={Home} />
         <Route path="/about" exact component={About} />
         <Route path="/education" exact component={Education} />
