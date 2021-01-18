@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Switch } from "react-router-dom";
 import { MDBSideNavNav, MDBSideNav, MDBSideNavLink, MDBContainer, MDBIcon, MDBView, MDBMask } from "mdbreact";
 import Home from './Home';
 import About from './About';
@@ -46,17 +47,17 @@ render() {
                   Home
               </MDBSideNavLink>
             
-              <MDBSideNavLink to="/about/" >
+              <MDBSideNavLink to="/about" >
                 <MDBIcon icon="laugh" className="mr-2" />
                   About
               </MDBSideNavLink>
 
-              <MDBSideNavLink to="/education/">
+              <MDBSideNavLink to="/education">
                 <MDBIcon icon="tools" className="mr-2" />
                   Education
               </MDBSideNavLink>
 
-              <MDBSideNavLink to="/mywork/">
+              <MDBSideNavLink to="/mywork">
                 <MDBIcon icon="eye" className="mr-2" />
                   My Work
               </MDBSideNavLink>
@@ -76,11 +77,14 @@ render() {
           </div>
         </MDBSideNav>
 
-        <Route path="/" exact component={Home} />
-        <Route path="/portfolio" exact component={Home} />
-        <Route path="/about/" exact component={About} />
-        <Route path="/education/" exact component={Education} />
-        <Route path="/mywork/" exact component={Portfolio} />
+        <Switch>
+          <Route exact path="/" exact component={Home} />
+          <Route path="/portfolio" exact component={Home} />
+          <Route path="/about" exact component={About} />
+          <Route path="/education" exact component={Education} />
+          <Route path="/mywork" exact component={Portfolio} />
+          <Route component={Home}/>
+        </Switch>
       </Router>
 
 
