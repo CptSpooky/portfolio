@@ -46,17 +46,17 @@ render() {
                   Home
               </MDBSideNavLink>
             
-              <MDBSideNavLink to="/about" >
+              <MDBSideNavLink to="/about/" >
                 <MDBIcon icon="laugh" className="mr-2" />
                   About
               </MDBSideNavLink>
 
-              <MDBSideNavLink to="/education">
+              <MDBSideNavLink to="/education/">
                 <MDBIcon icon="tools" className="mr-2" />
                   Education
               </MDBSideNavLink>
 
-              <MDBSideNavLink to="/mywork">
+              <MDBSideNavLink to="/mywork/">
                 <MDBIcon icon="eye" className="mr-2" />
                   My Work
               </MDBSideNavLink>
@@ -78,9 +78,9 @@ render() {
 
         <Route path="/" exact component={Home} />
         <Route path="/portfolio" exact component={Home} />
-        <Route path="/about" exact component={About} />
-        <Route path="/education" exact component={Education} />
-        <Route path="/mywork" exact component={Portfolio} />
+        <Route path="/about/" exact component={About} />
+        <Route path="/education/" exact component={Education} />
+        <Route path="/mywork/" exact component={Portfolio} />
       </Router>
 
 
