@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter} from "react-router-dom";
 import { Switch } from "react-router-dom";
 import { MDBSideNavNav, MDBSideNav, MDBSideNavLink, MDBContainer, MDBIcon, MDBView, MDBMask } from "mdbreact";
 import Home from './Home';
@@ -22,7 +22,7 @@ sidenavToggle = sidenavId => () => {
 
 render() {
     return (
-      <Router>
+      <HashRouter>
         <MDBContainer className="mobileNav" style={{ margin: "0px", width: "100%" }}>
           <img alt="logo" src={Logo} className="rounded-circle" style={{ maxWidth: "50px"}} />
           <MDBView hover onClick={this.sidenavToggle("Left")}>
@@ -85,7 +85,7 @@ render() {
           <Route path="/mywork" exact component={Portfolio} />
           <Route component={Home}/>
         </Switch>
-      </Router>
+      </HashRouter>
 
 
     );
