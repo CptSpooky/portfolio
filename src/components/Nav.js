@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { HashRouter} from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 import { Switch } from "react-router-dom";
 import { MDBSideNavNav, MDBSideNav, MDBSideNavLink, MDBContainer, MDBIcon, MDBView, MDBMask } from "mdbreact";
 import Home from './Home';
