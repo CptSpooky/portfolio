@@ -79,7 +79,7 @@ a:hover {
 }
 
 .fontL {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .lineHeight {
@@ -226,7 +226,7 @@ ul {
 }
 
 .overflowAbout {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* Education */
