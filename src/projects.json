@@ -9,67 +9,73 @@
         "image": "https://i.imgur.com/TOUgKFU.jpg",
         "cimage1": "https://i.imgur.com/VLo9JrV.png",
         "cimage2": "https://i.imgur.com/NffNanL.png",
-        "cimage3": "https://i.imgur.com/bhBbzKv.png"
+        "cimage3": "https://i.imgur.com/bhBbzKv.png",
+        "ux": ""
     },
     {
         "id": 1,
-        "title": "Weather Dashboard",
+        "title": "CRWN Clothing",
         "role": "Web Development",
-        "description": "Created a user-search weather dashboard using Javascript/JQuery/ Ajax, the open weather and open UV APIs.",
-        "deployed": "https://cptspooky.github.io/Weather-Dashboard/",
-        "github":"https://github.com/CptSpooky/Weather-Dashboard",
-        "image": "https://i.imgur.com/1COerWf.jpg",
-        "cimage1": "https://i.imgur.com/v97KDj6.png",
-        "cimage2": "https://i.imgur.com/iY4poUg.png",
-        "cimage3": "https://i.imgur.com/eNrjae2.png"
+        "description": "An eCommerce website utilizing ReactJS, React-Redux, SASS CSS, Firebase and Stripe.",
+        "deployed": "https://crwn-commerce-demo.herokuapp.com/",
+        "github":"https://github.com/CptSpooky/eCommerce-App",
+        "image": "https://i.imgur.com/sfG9x2L.jpg",
+        "cimage1": "https://i.imgur.com/bmbrzTH.png",
+        "cimage2": "https://i.imgur.com/sz3n467.png",
+        "cimage3": "https://i.imgur.com/0lR5cYS.png",
+        "ux":""
     },
     {
         "id": 2,
-        "title": "Work Day Scheduler",
-        "role": "Web Development",
-        "description": "A simple color coded event-saving day planner created with javascript and JQuery.",
-        "deployed": "https://cptspooky.github.io/Work-Day-Scheduler/",
-        "github":"https://github.com/CptSpooky/Work-Day-Scheduler",
-        "image": "https://i.imgur.com/PioVHdV.jpg",
-        "cimage1": "https://i.imgur.com/zND1pIk.png",
-        "cimage2": "https://i.imgur.com/PZFIFb3.png",
-        "cimage3": "https://i.imgur.com/m3lzky9.png"
+        "title": "Mocannbizcon",
+        "role": "UX Design",
+        "description": "Mocannbizcon is a business and technology conference for cannabis professionals hosted in Saint Louis, MO. The purpose of the website was to be a central hub where industry professionals could get information on the event, become sponsors, vendors and purchase tickets.",
+        "deployed": "https://mocannbizcon.com/",
+        "github":"",
+        "image": "https://i.imgur.com/oM18nJO.jpg",
+        "cimage1": "https://i.imgur.com/y0ccemW.jpg",
+        "cimage2": "https://i.imgur.com/u6npM8c.jpg",
+        "cimage3": "https://i.imgur.com/GWvjSP2.png",
+        "ux": "https://www.figma.com/file/SPg6fDvtRop3kK8RoCAvpn/UX-Projects?node-id=55%3A1"
     },
     {
         "id": 3,
         "title": "Pixel Patch",
-        "role": "Web Development",
+        "role": "Web Development / UX Design",
         "description": "A pumpkin stencil app where users can create their own stencils and print them out. Focused heavily on illustrating and coding most of the front end as well as back end. Utilizes Express, Node, Jquery/JavaScript, MySQL/sequelize, Ajax and Passport.",
         "deployed": "https://project-2-team6.herokuapp.com/",
         "github":"https://github.com/SeanPCummings/Project-2",
         "image": "https://i.imgur.com/m3OHwvo.jpg",
         "cimage1": "https://i.imgur.com/ovvEFEV.png",
         "cimage2": "https://i.imgur.com/nseksEV.png",
-        "cimage3": "https://i.imgur.com/KNEEE6H.png"
+        "cimage3": "https://i.imgur.com/KNEEE6H.png",
+        "ux": "https://www.figma.com/file/SPg6fDvtRop3kK8RoCAvpn/UX-Projects?node-id=55%3A0"
     },
     {
         "id": 4,
         "title": "DBUG ME",
-        "role": "Web Development",
+        "role": "Web Development / UX Design",
         "description": "DBugMe is a public platform curated for up and coming developers, it allows the user to save important posts on their profile. DBugMe also allows the user to connect with a mentor to help work through problems. The App can be used to share one’s knowledge and collaborate with other developers while learning new tips and tricks. Built alongside a team where I led front end with ReactJS, Create-React-App, and Bootstrap-React. Back end utilized MongoDB, Mongoose, and several authenticator libraries.",
         "deployed": "https://dbugme.herokuapp.com/",
         "github":"https://github.com/jesseodonoghue/project-3",
         "image": "https://i.imgur.com/Ra4ygrT.png",
         "cimage1": "https://i.imgur.com/1WUOSrc.png",
         "cimage2": "https://i.imgur.com/9KKQtVv.png",
-        "cimage3": "https://i.imgur.com/pFXXTcI.png"
+        "cimage3": "https://i.imgur.com/pFXXTcI.png",
+        "ux": "https://www.figma.com/file/SPg6fDvtRop3kK8RoCAvpn/UX-Projects?node-id=0%3A1"
     },
     {
         "id": 5,
         "title": "Sensient Pharma",
-        "role": "Web Development",
+        "role": "Web Development / UX Design",
         "description": "A series of blogs designed and coded for Sensient Pharmaceutical. Utilized html, css, wordpress, and php.",
         "deployed": "https://sensientpharma.com/health-and-wellness/",
         "github":"",
         "image": "https://i.imgur.com/kyEbw6j.png",
         "cimage1": "https://i.imgur.com/23A4ju8.png",
         "cimage2": "https://i.imgur.com/s7fFtHW.png",
-        "cimage3": "https://i.imgur.com/WRpopmC.png"
+        "cimage3": "https://i.imgur.com/WRpopmC.png",
+        "ux": "https://www.figma.com/file/SPg6fDvtRop3kK8RoCAvpn/UX-Projects?node-id=55%3A2"
     },
     {
         "id": 6,
@@ -81,7 +87,8 @@
         "image": "https://i.imgur.com/NmFHHxA.png",
         "cimage1": "https://i.imgur.com/NmFHHxA.png",
         "cimage2": "https://i.imgur.com/N5WLe5i.png",
-        "cimage3": "https://i.imgur.com/gNi2svT.png"
+        "cimage3": "https://i.imgur.com/gNi2svT.png",
+        "ux": ""
     },
     {
         "id": 7,
@@ -89,11 +96,12 @@
         "role": "Graphic Design",
         "description": "Designed and illustrated an ebook for Microsoft taking a look at how different businesses are utilizing Microsoft tools to empower their workforce and foster collaboration.",
         "deployed": "https://www.techrepublic.com/index.php/resource-library/whitepapers/innovator-s-guide-to-smarter-collaboration/",
-        "github":"https://www.techrepublic.com/index.php/resource-library/whitepapers/innovator-s-guide-to-smarter-collaboration/",
+        "github":"",
         "image": "https://i.imgur.com/WmtfWtJ.png",
         "cimage1": "https://i.imgur.com/WmtfWtJ.png",
         "cimage2": "https://i.imgur.com/UqrBmrG.png",
-        "cimage3": "https://i.imgur.com/UB61Z7m.png"
+        "cimage3": "https://i.imgur.com/UB61Z7m.png",
+        "ux": ""
     },
     {
         "id": 8,
@@ -105,7 +113,8 @@
         "image": "https://i.imgur.com/JSjiUNO.png",
         "cimage1": "https://i.imgur.com/JSjiUNO.png",
         "cimage2": "https://i.imgur.com/L4nQN1P.png",
-        "cimage3": "https://i.imgur.com/jxD1lmN.jpg"
+        "cimage3": "https://i.imgur.com/jxD1lmN.jpg",
+        "ux": ""
     },
     {
         "id": 9,
@@ -117,7 +126,8 @@
         "image": "https://i.imgur.com/R8zsLcr.png",
         "cimage1": "https://i.imgur.com/4rm0vMB.png",
         "cimage2": "https://i.imgur.com/mYld2VY.png",
-        "cimage3": "https://i.imgur.com/8xfauFD.jpg"
+        "cimage3": "https://i.imgur.com/8xfauFD.jpg",
+        "ux": ""
     }
 
 ]

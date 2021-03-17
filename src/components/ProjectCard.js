@@ -106,6 +106,7 @@ class ProjectCard extends Component {
 
               <MDBCardText>
                 {this.props.projects[this.state.id].description}
+                <div className={this.props.projects[this.state.id].ux=="" ? "invisible d-none" : "visible uxProj"}><strong>For a more in depth UX process visit <a href={this.props.projects[this.state.id].ux} target="blank">this link</a>.</strong></div>
               </MDBCardText>
 
               <MDBCol md='12' className='d-flex justify-content-center'>
