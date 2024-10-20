@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 import { MDBAnimation, MDBCol, MDBRow, MDBIcon } from "mdbreact";
-import portProjects from '../projects.json';
+import Projects from '../projects.js';
 
 export default function Portfolio() {
   return (
@@ -17,14 +17,31 @@ export default function Portfolio() {
               </MDBCol>
             </MDBRow>
             <MDBAnimation type="fadeInLeft" delay="100ms" duration="1.5s" >
+            <MDBRow>
+              <MDBCol md='12' className='d-flex'>
+                <h4 className="drkGrey fontL">Full Stack Engineer and UX/UI Designer</h4>
+              </MDBCol>
+            </MDBRow>
+            <MDBRow>
+              <MDBCol md='12' className='d-flex'>
+                <h5 className="drkGrey fontL mt-0">VIKING SASQUATCH | 2021-Present</h5>
+              </MDBCol>
+            </MDBRow>
+            <MDBRow>
+              <MDBCol md='12' className='d-flex'>
+                <h6 className="drkGrey fontL lineHeight">Agile lead front end and back end developer for several client and in-house projects. Responsible for meeting SOC2 compliance, releases, code quality, managing AWS accounts pertaining to my projects, collaborating with different teams, project management via Jira, designing UI’s, in house marketing assets, website design and branding.</h6>
+              </MDBCol>
+            </MDBRow>
+          </MDBAnimation>
+            <MDBAnimation type="fadeInLeft" delay="100ms" duration="1.5s" >
               <MDBRow>
                 <MDBCol md='12' className='d-flex'>
-                  <h4 className="drkGrey fontL">Senior Designer and Junior Web Developer</h4>
+                  <h4 className="drkGrey fontL">Full Stack Engineer | UX/UI Designer | Graphic Designer</h4>
                 </MDBCol>
               </MDBRow>
               <MDBRow>
                 <MDBCol md='12' className='d-flex'>
-                  <h5 className="drkGrey fontL mt-0">Freelance | 2019-2021</h5>
+                  <h5 className="drkGrey fontL mt-0">FREELANCE | 2019-Present</h5>
                 </MDBCol>
               </MDBRow>
               <MDBRow>
@@ -68,17 +85,17 @@ export default function Portfolio() {
               </MDBRow>
               <MDBRow>
                 <MDBCol md='12' className='d-flex'>
-                  <h6 className="drkGrey fontL lineHeight"><strong>Languages: </strong>HTML/CSS, JavaScript, JQuery</h6>
+                  <h6 className="drkGrey fontL lineHeight"><strong>Languages: </strong>HTML/CSS, JavaScript, JQuery, Typescript</h6>
                 </MDBCol>
               </MDBRow>
               <MDBRow>
                 <MDBCol md='12' className='d-flex'>
-                  <h6 className="drkGrey fontL lineHeight"><strong>Libraries/APIs: </strong>Ajax, Node.js, MySQL, MongoDB, Mongoose, Handlebars.js, Express, ReactJS, JSX</h6>
+                  <h6 className="drkGrey fontL lineHeight"><strong>Libraries/APIs: </strong>Ajax, Node.js, MySQL, MongoDB, Mongoose, Sequelize, Axios, Handlebars.js, Express, ReactJS, JSX, React-Redux, Prisma, Vuejs, Vuex, NESTJs, AWS Lambda, AWS S3, AWS Amplify, AWS Route 53, Tauri, Electron, NSIS, Tailwind CSS, Swagger, Insomnia, Storybook, Vite, Auth0, SOC2, Agile/Scrum, Husky, Linters</h6>
                 </MDBCol>
               </MDBRow>
               <MDBRow>
                 <MDBCol md='12' className='d-flex'>
-                  <h6 className="drkGrey fontL lineHeight"><strong>Design: </strong>Illustration, Motion Graphics, Print and Digital layouts, Adobe Suite proficiency</h6>
+                  <h6 className="drkGrey fontL lineHeight"><strong>Design: </strong>UX/UI Design, Illustration, Motion Graphics, Print and Digital layouts, Adobe Suite proficiency</h6>
                 </MDBCol>
               </MDBRow>
             </MDBAnimation>  
@@ -87,7 +104,7 @@ export default function Portfolio() {
         
         <div className="halfContainer halfContainer-padding halfContainer-margin">
           <div className="WebDevProjectList">
-            <ProjectCard projects={portProjects}/>
+            <ProjectCard projects={Projects}/>
           </div>
         </div>
     </div>

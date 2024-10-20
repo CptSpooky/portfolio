@@ -11,7 +11,6 @@ class ProjectCard extends Component {
   }
 
   toggle = (nr, item) => () => {
-    console.log(item);
     let modalNumber = 'modal' + nr
 
     if (item != null) {
@@ -32,7 +31,7 @@ class ProjectCard extends Component {
       <>
 
         {this.props.projects.map(item => (
-          <MDBAnimation type="fadeInRight" duration="1.2s">
+          <MDBAnimation type="fadeInRight" duration="1.2s" key={item.id + item.title}>
             <div key={item.id} className="projectCard z-depth-1" onClick={this.toggle(14, item)}>
               <MDBView hover zoom className="overlay rounded z-depth-1" waves>
                 <img
@@ -54,7 +53,7 @@ class ProjectCard extends Component {
             
             <MDBCarousel
               activeItem={1}
-              length={3}
+              length={this.props.projects[this.state.id].imagesShown}
               showControls={false}
               showIndicators={true}
               className="z-depth-1"

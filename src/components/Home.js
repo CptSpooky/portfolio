@@ -11,7 +11,7 @@ export default function Home() {
         </MDBAnimation>
         <MDBAnimation type="fadeIn" delay="900ms" duration="2s" >
           <h1>I'm Danielle.</h1>
-          <h3>Junior Full Stack Web Developer | Graphic Designer</h3>
+          <h3 style={{fontSize:"1.65rem"}}>Full Stack Engineer | UX/UI Designer</h3>
         </MDBAnimation>
       </div>
       <MDBAnimation type="bounceIn" duration="1s" >

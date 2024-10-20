@@ -17,6 +17,23 @@ export default function Education() {
               </MDBCol>
             </MDBRow>
             <MDBAnimation type="fadeInLeft" delay="100ms" duration="1.5s" >
+            <MDBRow>
+              <MDBCol md='12' className='d-flex'>
+                <h4 className="drkGrey fontL">Continuous Learning</h4>
+              </MDBCol>
+            </MDBRow>
+            <MDBRow>
+              <MDBCol md='12' className='d-flex'>
+                <h5 className="drkGrey fontL mt-0">Present</h5>
+              </MDBCol>
+            </MDBRow>
+            <MDBRow>
+              <MDBCol md='12' className='d-flex'>
+                <h6 className="drkGrey fontL lineHeight">Technology is always changing, theres always things to learn, so I never stop learning!</h6>
+              </MDBCol>
+            </MDBRow>
+          </MDBAnimation>
+            <MDBAnimation type="fadeInLeft" delay="100ms" duration="1.5s" >
               <MDBRow>
                 <MDBCol md='12' className='d-flex'>
                   <h4 className="drkGrey fontL">Certificate in Full Stack Web Development</h4>
