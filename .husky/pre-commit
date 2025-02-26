@@ -1,6 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-export PATH="./node_modules/.bin:$PATH"
-
-npx eslint --config eslint.config.js . --max-warnings=0 && npm run format:write && npm run format:check && npm run build
+npm run format:write && npm run format:check && npm run lint && npm run build
