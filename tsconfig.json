@@ -1,5 +1,14 @@
 {
   "files": [],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "types": ["react", "react-dom"],
+    "paths": {
+      "@router/*": ["./src/router/*"],
+      "@layouts/*": ["./src/layouts/*"],
+      "@pages/*": ["./src/pages/*"]
+    }
+  },
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
