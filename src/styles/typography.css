@@ -1,0 +1,25 @@
+@layer components {
+  h1 {
+    @apply font-pattaya text-[#9A348E] sm:text-[5rem]/[5.5rem] md:text-[6rem]/[6.5rem] lg:text-[7.2rem]/[7.5rem] text-[3rem]/[3.5rem];
+  }
+
+  h2 {
+    @apply font-robotomono text-slate-800 md:text-[4.5rem]/[5rem] lg:text-[5.2rem]/[6rem] text-[2rem]/[2.5rem];
+  }
+
+  h3 {
+    @apply text-[1.5rem]/[2rem] font-[500] text-slate-700 sm:text-[1.75rem]/[2.25rem] md:text-[1.9rem]/[2.4rem] lg:text-[2.1rem]/[2.5rem];
+  }
+
+  h4 {
+    @apply text-[1.2rem] font-bold text-slate-700;
+  }
+
+  h5 {
+    @apply text-[1.15rem];
+  }
+
+  p {
+    @apply text-[.8rem] font-bold text-slate-700;
+  }
+}

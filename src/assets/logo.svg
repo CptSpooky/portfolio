@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="10.583333mm"
+   height="10.583333mm"
+   viewBox="0 0 10.583333 10.583333"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="logo.svg"
+   enable-background="new"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <defs
+     id="defs2">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter4808">
+      <feBlend
+         inkscape:collect="always"
+         mode="screen"
+         in2="BackgroundImage"
+         id="feBlend4810" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="9.95"
+     inkscape:cx="-2.5770751"
+     inkscape:cy="12.719978"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:object-nodes="false"
+     inkscape:snap-nodes="false"
+     inkscape:snap-others="false" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-70.681547,-64.544637)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="D"
+     style="filter:url(#filter4808)">
+    <g
+       id="g4802"
+       transform="matrix(1.3001008,0,0,1.3001008,-1.3358128,-1.433509)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4695"
+         d="m 3.9930379,1.8500163 0.3488158,0.9921876 h 0.2635499 c 0.7234695,0 1.2712393,0.1963703 1.6433106,0.5891112 0.1669593,0.169995 0.2946882,0.3798779 0.3880898,0.624768 L 7.112744,2.7109457 C 6.9291305,2.5387402 6.7212654,2.3886757 6.4864257,2.2634277 5.9696609,1.98782 5.3392088,1.8500163 4.5950684,1.8500163 Z m -1.4236857,0.769462 v 5.8761271 h 2.0257162 c 0.041217,0 0.078816,-0.0048 0.1193724,-0.00568 L 4.3542561,7.5034179 H 3.8199219 V 6.0414915 Z M 8.04292,4.698938 6.8724486,7.8222614 C 7.1870813,7.5858041 7.4452617,7.2942775 7.6439778,6.9453124 7.9264758,6.4423284 8.0677247,5.8497721 8.0677247,5.1676432 8.0677244,5.0063664 8.0588947,4.8503842 8.04292,4.698938 Z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Padauk;-inkscape-font-specification:'Padauk Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4778"
+         d="m 2.5843383,1.8603515 1.2355835,3.381189 0.824239,2.2556763 0.3503665,0.9580809 c 0.203173,-0.016116 0.41532,-0.020119 0.60048,-0.060461 0.308336,-0.06718 0.591695,-0.1679485 0.850077,-0.3023071 0.01705,-0.00886 0.02869,-0.022927 0.04547,-0.032039 l 1.45418,-3.8819343 C 7.8779143,3.9131332 7.7891813,3.6612224 7.6646483,3.4313151 7.5701473,3.2544279 7.4410113,3.1093089 7.3158323,2.9605427 L 6.7370563,4.5955852 5.8187663,7.1897419 5.6993933,7.5266724 5.6244623,7.3142821 4.0514322,2.8422039 3.7057168,1.8603515 Z"
+         style="color:#000000;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:medium;line-height:1.25;font-family:Padauk;-inkscape-font-specification:'Padauk Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.274387;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+    </g>
+  </g>
+</svg>

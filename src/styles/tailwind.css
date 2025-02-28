@@ -1,2 +1,19 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&family=Roboto+Mono:wght@700&display=swap");
+
+/* Tailwind CSS and Daisy UI*/
 @import "tailwindcss";
 @plugin "daisyui";
+
+/* Theme */
+@theme {
+  --font-robotomono: "Roboto Mono", monospace;
+  --font-pattaya: "Pattaya", sans-serif;
+  --color-primary-purple: #9A348E;
+}
+
+/**
+ * Custom CSS files"
+*/
+@import './pageLayout.css';
+@import './typography.css';
