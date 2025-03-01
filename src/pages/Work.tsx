@@ -93,11 +93,11 @@ const Work: FC = () => {
             <b>Languages: </b>HTML/CSS, JavaScript, JQuery, Typescript.
           </p>
           <p className="body-text">
-            <b>Libraries/APIs: </b>Ajax, Node.js, MySQL, Postgres, MongoDB, Mongoose,
-            Sequelize, Axios, Handlebars.js, Express, ReactJS, JSX, React-Redux,
-            Prisma, Vuejs, Vuex, NESTJs, AWS Lambda, AWS S3, AWS Amplify, AWS
-            Route 53, Tauri, Electron, NSIS, Tailwind CSS, Swagger, Insomnia,
-            Storybook, Vite, Auth0, SOC2, Agile/Scrum, Husky, Linters.
+            <b>Libraries/APIs: </b>Ajax, Node.js, MySQL, Postgres, MongoDB,
+            Mongoose, Sequelize, Axios, Handlebars.js, Express, ReactJS, JSX,
+            React-Redux, Prisma, Vuejs, Vuex, NESTJs, AWS Lambda, AWS S3, AWS
+            Amplify, AWS Route 53, Tauri, Electron, NSIS, Tailwind CSS, Swagger,
+            Insomnia, Storybook, Vite, Auth0, SOC2, Agile/Scrum, Husky, Linters.
           </p>
           <p className="body-text">
             <b>Design: </b>UX/UI Design, Illustration, Motion Graphics, Print
