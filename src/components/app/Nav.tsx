@@ -34,7 +34,7 @@ const Nav: FC = () => {
       icon: DiplomaIcon,
       alt: 'Education',
     },
-    { name: 'About', path: '/work', icon: BriefcaseIcon, alt: 'Work' },
+    { name: 'My Work', path: '/work', icon: BriefcaseIcon, alt: 'Work' },
   ];
 
   const socialItems: NavItem[] = [
@@ -56,7 +56,7 @@ const Nav: FC = () => {
     <>
       {/* Sidebar for larger screens */}
       <div
-        className={`bg-base-200 shadow-md flex-col pt-4 transition-all justify-between pb-4 hidden md:flex ${
+        className={`bg-base-200 shadow-md flex-col pt-4 transition-all justify-between pb-4 hidden md:flex sticky left-0 top-0 h-screen ${
           collapsed ? 'w-20 max-w-20 min-w-20' : 'w-48 max-w-48 min-w-48'
         }`}
       >
@@ -121,7 +121,7 @@ const Nav: FC = () => {
       </div>
 
       {/* Bottom Navbar for mobile screens */}
-      <div className="fixed bottom-0 left-0 w-full bg-base-200 shadow-md flex md:hidden justify-around p-2">
+      <div className="fixed bottom-0 left-0 w-full bg-base-200 shadow-md flex md:hidden justify-around p-2 z-10">
         {navItems.map((item) => (
           <NavLink
             key={item.path}
