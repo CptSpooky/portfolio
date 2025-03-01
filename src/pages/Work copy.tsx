@@ -58,17 +58,15 @@ const Work: FC = () => {
     },
   ];
   return (
-    <div className="flex flex-col w-full m-12 flex-wrap lg:flex-nowrap">
-      <div className="flex flex-col md:flex-row md:gap-4 md:items-center">
-        <h2 className="mb-3 md:text-center mr-8">Work &</h2>
-        <h1 className="mb-3 md:text-center">Experience</h1>
-      </div>
-      <div className="flex flex-row flex-wrap lg:flex-nowrap justify-between">
-        <div className="flex flex-col justify-center w-full 2xl:max-w-[700px]">
-        
+    <div className="flex flex-row w-full m-12 flex-wrap lg:flex-nowrap">
+      <div className="flex flex-col justify-center">
+        <div className="flex flex-col md:flex-row md:gap-4 md:items-center">
+          <h2 className="mb-3 md:text-center mr-8">Work &</h2>
+          <h1 className="mb-3 md:text-center">Experience</h1>
+        </div>
         {workSections.map((section) => (
           <div
-            className="flex justify-center mt-8 flex-col"
+            className="flex justify-center mt-8 flex-col lg:max-w-[70%]"
             key={section.title}
           >
             <p className="font-bold">{section.title}</p>
@@ -91,7 +89,7 @@ const Work: FC = () => {
           </div>
         ))}
         <p className="font-bold mt-12">Skills</p>
-        <div>
+        <div className="lg:max-w-[70%]">
           <p className="body-text">
             <b>Languages: </b>HTML/CSS, JavaScript, JQuery, Typescript.
           </p>
@@ -108,23 +106,19 @@ const Work: FC = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-center w-full md:w-fit">
-      <div className="flex">
-        <div className="grid grid-cols-1 w-full md:grid-cols-2 gap-6 mt-8 xl:w-fit">
-          {ProjectList.slice(0, 12).map((project) => (
-            <ProjectCard
-              key={project.id}
-              id={project.id}
-              title={project.title}
-              subtitle={project.subtitle}
-              description={project.description}
-              images={project.images}
-              thumbnail={project.thumbnail}
-            />
-          ))}
-        </div>
-      </div>
-      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 w-full">
+        {ProjectList.slice(0, 12).map((project) => (
+          <ProjectCard
+            key={project.id}
+            id={project.id}
+            title={project.title}
+            subtitle={project.subtitle}
+            description={project.description}
+            images={project.images}
+            thumbnail={project.thumbnail}
+          />
+        ))}
       </div>
     </div>
   );

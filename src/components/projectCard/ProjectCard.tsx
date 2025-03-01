@@ -1,15 +1,8 @@
 import { useState, FC } from 'react';
 import XMarkIcon from '@assets/icons/xmark-solid.svg';
+import { ProjectCardTypes } from '@models/ProjectCard.types.ts';
 
-interface ProjectCardProps {
-  title: string;
-  subtitle: string;
-  description: string;
-  images: string[];
-  thumbnail: string;
-}
-
-const ProjectCard: FC<ProjectCardProps> = ({
+const ProjectCard: FC<ProjectCardTypes> = ({
   title,
   subtitle,
   description,
@@ -30,7 +23,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
     <>
       {/* Project Card */}
       <div
-        className="relative w-80 h-48 rounded-lg overflow-hidden cursor-pointer group"
+        className="relative max-w-[300px] max-h-[190px] rounded-lg overflow-hidden cursor-pointer group shadow-xl"
         onClick={() => setIsModalOpen(true)}
       >
         <img
@@ -103,9 +96,9 @@ const ProjectCard: FC<ProjectCardProps> = ({
 
             {/* Card Body */}
             <div className="p-5 flex flex-col justify-center items-center">
-              <h3 className="card-title text-slate-900">{title}</h3>
-              <h3 className="card-subtitle text-primary-purple">{subtitle}</h3>
-              <p className="card-body text-slate-800">{description}</p>
+              <h3 className="card-title text-slate-900 text-center">{title}</h3>
+              <h3 className="card-subtitle text-primary-purple text-center">{subtitle}</h3>
+              <p className="card-body text-slate-800 text-center">{description}</p>
             </div>
           </div>
         </div>
