@@ -1,4 +1,5 @@
 import { useState, FC } from 'react';
+import XMarkIcon from '@assets/icons/xmark-solid.svg';
 
 interface ProjectCardProps {
   title: string;
@@ -30,14 +31,15 @@ const ProjectCard: FC<ProjectCardProps> = ({
     <>
      {/* Project Card */}
      <div
-        className="relative w-80 h-56 rounded-xl shadow-md overflow-hidden cursor-pointer transition-all hover:shadow-lg bg-white"
+        className="relative w-80 h-48 rounded-lg overflow-hidden cursor-pointer group"
         onClick={() => setIsModalOpen(true)}
       >
-        {/* Thumbnail */}
-        <img src={thumbnail} alt={title} className="w-full h-full object-cover" />
-
-        {/* Hover Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+        <img
+          src={thumbnail}
+          alt={title}
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-slate-900 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-slate-900/70 transition-opacity">
           <h3 className="text-white text-lg font-semibold">{title}</h3>
         </div>
       </div>
@@ -45,7 +47,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
       {/* Modal */}
       {isModalOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-40 flex justify-center items-center z-50"
+          className="fixed inset-0 bg-slate-900/50 flex justify-center items-center z-50"
           onClick={() => setIsModalOpen(false)}
         >
           <div
@@ -54,10 +56,10 @@ const ProjectCard: FC<ProjectCardProps> = ({
           >
             {/* Close Button */}
             <button
-              className="absolute top-3 right-3 text-gray-500 hover:text-gray-800"
+              className="absolute top-2 right-2 btn btn-ghost btn-circle z-50 hover:bg-slate-800"
               onClick={() => setIsModalOpen(false)}
             >
-              ✖
+              <img src={XMarkIcon} alt="Close" className="max-w-[16px] brightness-0 invert" />
             </button>
 
             {/* Image Carousel (Top) */}
@@ -67,39 +69,40 @@ const ProjectCard: FC<ProjectCardProps> = ({
                 alt={`Slide ${currentIndex + 1}`}
                 className="w-full h-64 object-cover rounded-t-xl"
               />
+              <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/50 pointer-events-none rounded-t-xl" />
               {/* Navigation Arrows */}
               <button
-                className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-100"
+                className="absolute left-2 top-1/2 p-2 btn btn-circle btn-ghost hover:bg-slate-800"
                 onClick={prevSlide}
               >
                 ❮
               </button>
               <button
-                className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-100"
+                className="absolute right-2 top-1/2 p-2  btn btn-circle btn-ghost hover:bg-slate-800"
                 onClick={nextSlide}
               >
                 ❯
               </button>
-            </div>
 
-            {/* Dots Navigation */}
-            <div className="flex justify-center mt-2">
-              {images.map((_, index) => (
-                <button
-                  key={index}
-                  className={`h-2 w-2 mx-1 rounded-full ${
-                    currentIndex === index ? "bg-gray-900" : "bg-gray-300"
-                  }`}
-                  onClick={() => setCurrentIndex(index)}
-                />
-              ))}
+              {/* Dots Navigation */}
+              <div className="absolute bottom-0 w-full p-2 flex justify-center mt-2">
+                {images.map((_, index) => (
+                  <button
+                    key={index}
+                    className={`h-2 w-2 mx-1 rounded-full ${
+                      currentIndex === index ? "bg-white" : "bg-white/70"
+                    }`}
+                    onClick={() => setCurrentIndex(index)}
+                  />
+                ))}
+              </div>
             </div>
 
             {/* Card Body */}
-            <div className="p-5">
-              <h2 className="text-2xl font-bold">{title}</h2>
-              <h3 className="text-gray-600">{subtitle}</h3>
-              <p className="mt-2 text-gray-700">{description}</p>
+            <div className="p-5 flex flex-col justify-center items-center">
+              <h3 className="card-title text-slate-900">{title}</h3>
+              <h3 className="card-subtitle text-primary-purple">{subtitle}</h3>
+              <p className="card-body text-slate-800">{description}</p>
             </div>
           </div>
         </div>

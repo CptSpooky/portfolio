@@ -26,4 +26,16 @@
   .body-text {
     @apply text-[1.2rem]/[2rem] text-slate-800;
   }
+
+  .card-title {
+    @apply text-[1.5rem]/[2.4rem] font-bold text-slate-800;
+  }
+
+  .card-subtitle {
+    @apply text-[1.2rem] text-slate-700;
+  }
+
+  .card-body {
+    @apply text-[1.2rem]/[2rem] text-slate-800;
+  }
 }
