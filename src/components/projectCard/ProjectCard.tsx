@@ -21,16 +21,15 @@ const ProjectCard: FC<ProjectCardProps> = ({
   const prevSlide = () => {
     setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
-  
+
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
-  
 
   return (
     <>
-     {/* Project Card */}
-     <div
+      {/* Project Card */}
+      <div
         className="relative w-80 h-48 rounded-lg overflow-hidden cursor-pointer group"
         onClick={() => setIsModalOpen(true)}
       >
@@ -59,7 +58,11 @@ const ProjectCard: FC<ProjectCardProps> = ({
               className="absolute top-2 right-2 btn btn-ghost btn-circle z-50 hover:bg-slate-800"
               onClick={() => setIsModalOpen(false)}
             >
-              <img src={XMarkIcon} alt="Close" className="max-w-[16px] brightness-0 invert" />
+              <img
+                src={XMarkIcon}
+                alt="Close"
+                className="max-w-[16px] brightness-0 invert"
+              />
             </button>
 
             {/* Image Carousel (Top) */}
@@ -90,7 +93,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
                   <button
                     key={index}
                     className={`h-2 w-2 mx-1 rounded-full ${
-                      currentIndex === index ? "bg-white" : "bg-white/70"
+                      currentIndex === index ? 'bg-white' : 'bg-white/70'
                     }`}
                     onClick={() => setCurrentIndex(index)}
                   />
