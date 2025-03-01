@@ -29,7 +29,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
           alt={title}
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-slate-900 bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity">
+        <div className="absolute inset-0 bg-slate-900 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity">
           <h3 className="text-white text-lg font-semibold">{title}</h3>
         </div>
       </div>
