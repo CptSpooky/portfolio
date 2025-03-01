@@ -65,66 +65,66 @@ const Work: FC = () => {
       </div>
       <div className="flex flex-row flex-wrap lg:flex-nowrap justify-between">
         <div className="flex flex-col justify-center w-full 2xl:max-w-[700px]">
-        
-        {workSections.map((section) => (
-          <div
-            className="flex justify-center mt-8 flex-col"
-            key={section.title}
-          >
-            <p className="font-bold">{section.title}</p>
-            <p className="font-italic mt-[-4px] mb-2">{section.date}</p>
-            <p className="body-text">{section.description}</p>
-            {section.bulletPoints && (
-              <div className="flex flex-col gap-4 mt-4">
-                {section.bulletPoints.map((point) => (
-                  <div className="flex gap-2" key={point.text}>
-                    <img
-                      src={point.icon}
-                      alt={point.text}
-                      className="w-[32px] mr-4"
-                    />
-                    <p className="body-text">{point.text}</p>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-        ))}
-        <p className="font-bold mt-12">Skills</p>
-        <div>
-          <p className="body-text">
-            <b>Languages: </b>HTML/CSS, JavaScript, JQuery, Typescript.
-          </p>
-          <p className="body-text">
-            <b>Libraries/APIs: </b>Ajax, Node.js, MySQL, Postgres, MongoDB,
-            Mongoose, Sequelize, Axios, Handlebars.js, Express, ReactJS, JSX,
-            React-Redux, Prisma, Vuejs, Vuex, NESTJs, AWS Lambda, AWS S3, AWS
-            Amplify, AWS Route 53, Tauri, Electron, NSIS, Tailwind CSS, Swagger,
-            Insomnia, Storybook, Vite, Auth0, SOC2, Agile/Scrum, Husky, Linters.
-          </p>
-          <p className="body-text">
-            <b>Design: </b>UX/UI Design, Illustration, Motion Graphics, Print
-            and Digital layouts, Adobe Suite proficiency, Figma proficiency.
-          </p>
-        </div>
-      </div>
-      <div className="flex justify-center w-full md:w-fit">
-      <div className="flex">
-        <div className="grid grid-cols-1 w-full md:grid-cols-2 gap-6 mt-8 xl:w-fit">
-          {ProjectList.slice(0, 12).map((project) => (
-            <ProjectCard
-              key={project.id}
-              id={project.id}
-              title={project.title}
-              subtitle={project.subtitle}
-              description={project.description}
-              images={project.images}
-              thumbnail={project.thumbnail}
-            />
+          {workSections.map((section) => (
+            <div
+              className="flex justify-center mt-8 flex-col"
+              key={section.title}
+            >
+              <p className="font-bold">{section.title}</p>
+              <p className="font-italic mt-[-4px] mb-2">{section.date}</p>
+              <p className="body-text">{section.description}</p>
+              {section.bulletPoints && (
+                <div className="flex flex-col gap-4 mt-4">
+                  {section.bulletPoints.map((point) => (
+                    <div className="flex gap-2" key={point.text}>
+                      <img
+                        src={point.icon}
+                        alt={point.text}
+                        className="w-[32px] mr-4"
+                      />
+                      <p className="body-text">{point.text}</p>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
+          <p className="font-bold mt-12">Skills</p>
+          <div>
+            <p className="body-text">
+              <b>Languages: </b>HTML/CSS, JavaScript, JQuery, Typescript.
+            </p>
+            <p className="body-text">
+              <b>Libraries/APIs: </b>Ajax, Node.js, MySQL, Postgres, MongoDB,
+              Mongoose, Sequelize, Axios, Handlebars.js, Express, ReactJS, JSX,
+              React-Redux, Prisma, Vuejs, Vuex, NESTJs, AWS Lambda, AWS S3, AWS
+              Amplify, AWS Route 53, Tauri, Electron, NSIS, Tailwind CSS,
+              Swagger, Insomnia, Storybook, Vite, Auth0, SOC2, Agile/Scrum,
+              Husky, Linters.
+            </p>
+            <p className="body-text">
+              <b>Design: </b>UX/UI Design, Illustration, Motion Graphics, Print
+              and Digital layouts, Adobe Suite proficiency, Figma proficiency.
+            </p>
+          </div>
         </div>
-      </div>
-      </div>
+        <div className="flex justify-center w-full md:w-fit">
+          <div className="flex">
+            <div className="grid grid-cols-1 w-full md:grid-cols-2 gap-6 mt-8 xl:w-fit">
+              {ProjectList.slice(0, 12).map((project) => (
+                <ProjectCard
+                  key={project.id}
+                  id={project.id}
+                  title={project.title}
+                  subtitle={project.subtitle}
+                  description={project.description}
+                  images={project.images}
+                  thumbnail={project.thumbnail}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

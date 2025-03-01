@@ -97,8 +97,12 @@ const ProjectCard: FC<ProjectCardTypes> = ({
             {/* Card Body */}
             <div className="p-5 flex flex-col justify-center items-center">
               <h3 className="card-title text-slate-900 text-center">{title}</h3>
-              <h3 className="card-subtitle text-primary-purple text-center">{subtitle}</h3>
-              <p className="card-body text-slate-800 text-center">{description}</p>
+              <h3 className="card-subtitle text-primary-purple text-center">
+                {subtitle}
+              </h3>
+              <p className="card-body text-slate-800 text-center">
+                {description}
+              </p>
             </div>
           </div>
         </div>
