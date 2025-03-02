@@ -14,7 +14,7 @@ const Home: FC = () => {
         className="flex flex-col justify-center grow items-center"
         initial={{ x: -100, opacity: 0 }} // Start off-screen to the left
         animate={{ x: 0, opacity: 1 }} // Slide into place
-        transition={{ type: "spring", stiffness: 100, damping: 15 }}
+        transition={{ type: 'spring', stiffness: 100, damping: 15 }}
       >
         <h2 className="mb-3 text-center">Hello World!</h2>
         <h1 className="mb-3 text-center">I&apos;m Danielle.</h1>
@@ -28,7 +28,7 @@ const Home: FC = () => {
           className="lg:max-h-[700px] md:max-h-[400px]"
           initial={{ scale: 0.3, opacity: 0, y: 50 }}
           animate={{ scale: 1, opacity: 1, y: 0 }}
-          transition={{ 
+          transition={{
             type: 'spring',
             stiffness: 500,
             damping: 20,

@@ -40,7 +40,7 @@ const About: FC = () => {
         className="flex flex-row justify-center items-center gap-4"
         initial={{ y: -100, opacity: 0 }} // Start off-screen to the top
         animate={{ y: 0, opacity: 1 }} // Slide into place
-        transition={{ type: "spring", stiffness: 100, damping: 15 }}
+        transition={{ type: 'spring', stiffness: 100, damping: 15 }}
       >
         <h2 className="text-center">About</h2>
         <h1 className="text-center pt-[10px] md:pt-0 lg:pt-0">Me</h1>
@@ -49,7 +49,7 @@ const About: FC = () => {
         className="flex justify-center items-center mt-8 flex-col md:w-[40%] text-center gap-4"
         initial={{ y: -100, opacity: 0 }} // Start off-screen to the top
         animate={{ y: 0, opacity: 1 }} // Slide into place
-        transition={{ type: "spring", stiffness: 100, damping: 15 }}
+        transition={{ type: 'spring', stiffness: 100, damping: 15 }}
       >
         <p>
           Highly-motivated remote Full Stack Web Developer with a background in
@@ -67,11 +67,12 @@ const About: FC = () => {
       </motion.div>
       <div className="flex justify-center items-center mt-12 mb-[98px] flex-col gap-8 md:flex-row md:gap-16 lg:gap-24">
         {iconButtons.map((item) => (
-          <motion.div 
-            className="flex flex-col items-center gap-2" key={item.alt}
+          <motion.div
+            className="flex flex-col items-center gap-2"
+            key={item.alt}
             initial={{ scale: 0.3, opacity: 0, y: 50 }}
             animate={{ scale: 1, opacity: 1, y: 0 }}
-            transition={{ 
+            transition={{
               type: 'spring',
               stiffness: 500,
               damping: 20,

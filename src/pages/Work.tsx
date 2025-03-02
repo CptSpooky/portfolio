@@ -64,17 +64,17 @@ const Work: FC = () => {
         className="flex flex-col md:flex-row md:gap-4 md:items-center"
         initial={{ x: -100, opacity: 0 }} // Start off-screen to the left
         animate={{ x: 0, opacity: 1 }} // Slide into place
-        transition={{ type: "spring", stiffness: 100, damping: 15 }}
+        transition={{ type: 'spring', stiffness: 100, damping: 15 }}
       >
         <h2 className="mb-3 md:text-center mr-8 text-nowrap">Work &</h2>
         <h1 className="mb-3 md:text-center">Experience</h1>
       </motion.div>
       <div className="flex flex-col flex-wrap 2xl:flex-row lg:flex-nowrap justify-between">
-        <motion.div 
+        <motion.div
           className="flex flex-col justify-center w-full 2xl:max-w-[700px]"
           initial={{ x: -100, opacity: 0 }} // Start off-screen to the left
           animate={{ x: 0, opacity: 1 }} // Slide into place
-          transition={{ type: "spring", stiffness: 100, damping: 15 }}
+          transition={{ type: 'spring', stiffness: 100, damping: 15 }}
         >
           {workSections.map((section) => (
             <div

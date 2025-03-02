@@ -46,75 +46,77 @@ const ProjectCard: FC<ProjectCardTypes> = ({
           onClick={() => setIsModalOpen(false)}
         >
           <AnimatePresence>
-          <motion.div
-            initial={{ y: -100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: -100, opacity: 1 }}
-            transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            className="w-full h-full overflow-auto bg-white rounded-xl shadow-xl relative flex flex-col sm:w-[90%] sm:!h-fit max-w-lg"
-            onClick={(e) => e.stopPropagation()} // Prevent modal from closing when clicking inside
-          >
-            {/* Close Button */}
-            <button
-              className="absolute top-2 right-2 btn btn-ghost btn-circle z-50 hover:bg-slate-800"
-              onClick={() => setIsModalOpen(false)}
+            <motion.div
+              initial={{ y: -100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: -100, opacity: 1 }}
+              transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+              className="w-full h-full overflow-auto bg-white rounded-xl shadow-xl relative flex flex-col sm:w-[90%] sm:!h-fit max-w-lg"
+              onClick={(e) => e.stopPropagation()} // Prevent modal from closing when clicking inside
             >
-              <img
-                src={XMarkIcon}
-                alt="Close"
-                className="max-w-[16px] brightness-0 invert"
-              />
-            </button>
-
-            {/* Image Carousel (Top) */}
-            <div className="relative">
-              <div className="w-full h-64 overflow-auto rounded-t-xl">
+              {/* Close Button */}
+              <button
+                className="absolute top-2 right-2 btn btn-ghost btn-circle z-50 hover:bg-slate-800"
+                onClick={() => setIsModalOpen(false)}
+              >
                 <img
-                  src={images[currentIndex]}
-                  alt={`Slide ${currentIndex + 1}`}
-                  className="w-full object-cover"
+                  src={XMarkIcon}
+                  alt="Close"
+                  className="max-w-[16px] brightness-0 invert"
                 />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/50 pointer-events-none rounded-t-xl" />
-              {/* Navigation Arrows */}
-              <button
-                className="absolute left-2 top-1/2 p-2 btn btn-circle btn-ghost hover:bg-slate-800"
-                onClick={prevSlide}
-              >
-                ❮
-              </button>
-              <button
-                className="absolute right-2 top-1/2 p-2  btn btn-circle btn-ghost hover:bg-slate-800"
-                onClick={nextSlide}
-              >
-                ❯
               </button>
 
-              {/* Dots Navigation */}
-              <div className="absolute bottom-0 w-full p-2 flex justify-center mt-2">
-                {images.map((_, index) => (
-                  <button
-                    key={index}
-                    className={`h-2 w-2 mx-1 rounded-full ${
-                      currentIndex === index ? 'bg-white' : 'bg-white/70'
-                    }`}
-                    onClick={() => setCurrentIndex(index)}
+              {/* Image Carousel (Top) */}
+              <div className="relative">
+                <div className="w-full h-64 overflow-auto rounded-t-xl">
+                  <img
+                    src={images[currentIndex]}
+                    alt={`Slide ${currentIndex + 1}`}
+                    className="w-full object-cover"
                   />
-                ))}
-              </div>
-            </div>
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/50 pointer-events-none rounded-t-xl" />
+                {/* Navigation Arrows */}
+                <button
+                  className="absolute left-2 top-1/2 p-2 btn btn-circle btn-ghost hover:bg-slate-800"
+                  onClick={prevSlide}
+                >
+                  ❮
+                </button>
+                <button
+                  className="absolute right-2 top-1/2 p-2  btn btn-circle btn-ghost hover:bg-slate-800"
+                  onClick={nextSlide}
+                >
+                  ❯
+                </button>
 
-            {/* Card Body */}
-            <div className="p-5 flex flex-col justify-center items-center">
-              <h3 className="card-title text-slate-900 text-center">{title}</h3>
-              <h3 className="card-subtitle text-primary-purple text-center">
-                {subtitle}
-              </h3>
-              <p className="card-body text-slate-800 text-center">
-                {description}
-              </p>
-            </div>
-          </motion.div>
+                {/* Dots Navigation */}
+                <div className="absolute bottom-0 w-full p-2 flex justify-center mt-2">
+                  {images.map((_, index) => (
+                    <button
+                      key={index}
+                      className={`h-2 w-2 mx-1 rounded-full ${
+                        currentIndex === index ? 'bg-white' : 'bg-white/70'
+                      }`}
+                      onClick={() => setCurrentIndex(index)}
+                    />
+                  ))}
+                </div>
+              </div>
+
+              {/* Card Body */}
+              <div className="p-5 flex flex-col justify-center items-center">
+                <h3 className="card-title text-slate-900 text-center">
+                  {title}
+                </h3>
+                <h3 className="card-subtitle text-primary-purple text-center">
+                  {subtitle}
+                </h3>
+                <p className="card-body text-slate-800 text-center">
+                  {description}
+                </p>
+              </div>
+            </motion.div>
           </AnimatePresence>
         </div>
       )}

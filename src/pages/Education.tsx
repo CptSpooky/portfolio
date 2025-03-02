@@ -52,7 +52,7 @@ const Education: FC = () => {
         className="flex flex-col justify-center"
         initial={{ x: -100, opacity: 0 }} // Start off-screen to the left
         animate={{ x: 0, opacity: 1 }} // Slide into place
-        transition={{ type: "spring", stiffness: 100, damping: 15 }}
+        transition={{ type: 'spring', stiffness: 100, damping: 15 }}
       >
         <div className="flex flex-col md:flex-row md:gap-4 md:items-center">
           <h2 className="mb-3 md:text-center">My</h2>
@@ -74,13 +74,9 @@ const Education: FC = () => {
         className="flex justify-center items-center mt-8 md:w-[100%] lg:w-[70%]"
         initial={{ y: -100, opacity: 0 }} // Start off-screen to the top
         animate={{ y: 0, opacity: 1 }} // Slide into place
-        transition={{ type: "spring", stiffness: 100, damping: 15 }}
+        transition={{ type: 'spring', stiffness: 100, damping: 15 }}
       >
-        <img 
-          alt="EducationImg"
-          src={EducationImg}
-          className="max-h-[900px]"
-        />
+        <img alt="EducationImg" src={EducationImg} className="max-h-[900px]" />
       </motion.div>
     </div>
   );
