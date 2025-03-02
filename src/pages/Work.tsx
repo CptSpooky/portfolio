@@ -109,19 +109,19 @@ const Work: FC = () => {
           </div>
         </div>
         <div className="flex justify-center w-full md:w-fit">
-            <div className="flex flex-row w-full gap-6 flex-wrap mt-8 mb-[98px] 2xl:max-w-[700px] mt-0">
-              {ProjectList.map((project) => (
-                <ProjectCard
-                  key={project.id}
-                  id={project.id}
-                  title={project.title}
-                  subtitle={project.subtitle}
-                  description={project.description}
-                  images={project.images}
-                  thumbnail={project.thumbnail}
-                />
-              ))}
-            </div>
+          <div className="flex flex-row w-full gap-6 flex-wrap mt-8 mb-[98px] 2xl:max-w-[700px] mt-0">
+            {ProjectList.map((project) => (
+              <ProjectCard
+                key={project.id}
+                id={project.id}
+                title={project.title}
+                subtitle={project.subtitle}
+                description={project.description}
+                images={project.images}
+                thumbnail={project.thumbnail}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
