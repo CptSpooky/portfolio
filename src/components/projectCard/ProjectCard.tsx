@@ -1,3 +1,7 @@
+/**
+ * @name ProjectCard
+ * @description Component for each individual project card
+ */
 import { useState, FC } from 'react';
 import XMarkIcon from '@assets/icons/xmark-solid.svg';
 import { ProjectCardTypes } from '@models/ProjectCard.types.ts';
