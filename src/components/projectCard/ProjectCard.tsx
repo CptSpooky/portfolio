@@ -81,7 +81,7 @@ const ProjectCard: FC<ProjectCardTypes> = ({
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30  bg-gradient-to-t from black/30 via transparent to-black/0 pointer-events-none rounded-t-xl" />
 
-                { images.length > 1 && (
+                {images.length > 1 && (
                   <>
                     {/* Navigation Arrows */}
                     <button
