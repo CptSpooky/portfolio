@@ -60,10 +60,10 @@ const Work: FC = () => {
   return (
     <div className="flex flex-col w-full m-12 flex-wrap lg:flex-nowrap">
       <div className="flex flex-col md:flex-row md:gap-4 md:items-center">
-        <h2 className="mb-3 md:text-center mr-8">Work &</h2>
+        <h2 className="mb-3 md:text-center mr-8 text-nowrap">Work &</h2>
         <h1 className="mb-3 md:text-center">Experience</h1>
       </div>
-      <div className="flex flex-row flex-wrap lg:flex-nowrap justify-between">
+      <div className="flex flex-col flex-wrap 2xl:flex-row lg:flex-nowrap justify-between">
         <div className="flex flex-col justify-center w-full 2xl:max-w-[700px]">
           {workSections.map((section) => (
             <div
@@ -109,9 +109,8 @@ const Work: FC = () => {
           </div>
         </div>
         <div className="flex justify-center w-full md:w-fit">
-          <div className="flex">
-            <div className="grid grid-cols-1 w-full md:grid-cols-2 gap-6 mt-8 xl:w-fit">
-              {ProjectList.slice(0, 12).map((project) => (
+            <div className="flex flex-row w-full gap-6 flex-wrap mt-8 mb-[98px] 2xl:max-w-[700px] mt-0">
+              {ProjectList.map((project) => (
                 <ProjectCard
                   key={project.id}
                   id={project.id}
@@ -123,7 +122,6 @@ const Work: FC = () => {
                 />
               ))}
             </div>
-          </div>
         </div>
       </div>
     </div>

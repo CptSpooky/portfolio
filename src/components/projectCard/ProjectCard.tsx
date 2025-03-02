@@ -23,7 +23,7 @@ const ProjectCard: FC<ProjectCardTypes> = ({
     <>
       {/* Project Card */}
       <div
-        className="relative max-w-[300px] max-h-[190px] rounded-lg overflow-hidden cursor-pointer group shadow-xl"
+        className="relative max-w-[300px] max-h-[190px] rounded-lg overflow-hidden cursor-pointer group shadow-xl md:min-w-[300px] min-h-[190px]"
         onClick={() => setIsModalOpen(true)}
       >
         <img
@@ -32,7 +32,7 @@ const ProjectCard: FC<ProjectCardTypes> = ({
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-slate-900 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-slate-900/70 transition-opacity">
-          <h3 className="text-white text-lg font-semibold">{title}</h3>
+          <h3 className="text-white text-lg font-semibold text-center max-w-[250px]">{title}</h3>
         </div>
       </div>
 
@@ -43,7 +43,7 @@ const ProjectCard: FC<ProjectCardTypes> = ({
           onClick={() => setIsModalOpen(false)}
         >
           <div
-            className="bg-white w-[90%] max-w-lg rounded-xl shadow-xl relative flex flex-col"
+            className="w-full h-full overflow-auto bg-white rounded-xl shadow-xl relative flex flex-col sm:w-[90%] sm:!h-fit max-w-lg"
             onClick={(e) => e.stopPropagation()} // Prevent modal from closing when clicking inside
           >
             {/* Close Button */}
@@ -60,11 +60,13 @@ const ProjectCard: FC<ProjectCardTypes> = ({
 
             {/* Image Carousel (Top) */}
             <div className="relative">
-              <img
-                src={images[currentIndex]}
-                alt={`Slide ${currentIndex + 1}`}
-                className="w-full h-64 object-cover rounded-t-xl"
-              />
+              <div className="w-full h-64 overflow-auto rounded-t-xl">
+                <img
+                  src={images[currentIndex]}
+                  alt={`Slide ${currentIndex + 1}`}
+                  className="w-full object-cover"
+                />
+              </div>
               <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/50 pointer-events-none rounded-t-xl" />
               {/* Navigation Arrows */}
               <button
