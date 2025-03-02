@@ -4,7 +4,7 @@
   }
 
   h2 {
-    @apply font-robotomono text-slate-800 md:text-[4.5rem]/[5rem] lg:text-[5.2rem]/[6rem] text-[3rem]/[2.5rem];
+    @apply font-robotomono text-[32px] text-slate-800 md:text-[4.5rem]/[5rem] lg:text-[5.2rem]/[6rem] text-[3rem]/[2.5rem];
   }
 
   h3 {

@@ -1,12 +1,18 @@
 /**
- * @description Common Layout with Header and Footer
+ * @description Common layout shared across all pages
  */
-import { Outlet } from 'react-router-dom';
-import { FC } from 'react';
+import { Outlet, useLocation } from 'react-router-dom';
+import { FC, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Nav from '@components/app/Nav';
 
 const PageLayout: FC = () => {
+  const { pathname } = useLocation(); // Get current route
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on route change
+  }, [pathname]);
+
   return (
     <AnimatePresence mode="sync">
       <motion.div
