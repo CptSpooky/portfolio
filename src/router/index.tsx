@@ -8,7 +8,7 @@ import Work from '@pages/Work';
 
 const Router: FC = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <Routes>
         <Route path="/" element={<PageLayout />}>
           <Route index element={<Home />} />
