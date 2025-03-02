@@ -8,6 +8,7 @@ import ListIcon from '@assets/icons/list-check-solid.svg';
 import TargetIcon from '@assets/icons/bullseye-solid.svg';
 import ProjectCard from '@components/projectCard/ProjectCard';
 import ProjectList from '@utils/projectList';
+import { motion } from 'framer-motion';
 
 interface BulletPoint {
   text: string;
@@ -59,12 +60,22 @@ const Work: FC = () => {
   ];
   return (
     <div className="flex flex-col w-full m-12 flex-wrap lg:flex-nowrap">
-      <div className="flex flex-col md:flex-row md:gap-4 md:items-center">
+      <motion.div
+        className="flex flex-col md:flex-row md:gap-4 md:items-center"
+        initial={{ x: -100, opacity: 0 }} // Start off-screen to the left
+        animate={{ x: 0, opacity: 1 }} // Slide into place
+        transition={{ type: "spring", stiffness: 100, damping: 15 }}
+      >
         <h2 className="mb-3 md:text-center mr-8 text-nowrap">Work &</h2>
         <h1 className="mb-3 md:text-center">Experience</h1>
-      </div>
+      </motion.div>
       <div className="flex flex-col flex-wrap 2xl:flex-row lg:flex-nowrap justify-between">
-        <div className="flex flex-col justify-center w-full 2xl:max-w-[700px]">
+        <motion.div 
+          className="flex flex-col justify-center w-full 2xl:max-w-[700px]"
+          initial={{ x: -100, opacity: 0 }} // Start off-screen to the left
+          animate={{ x: 0, opacity: 1 }} // Slide into place
+          transition={{ type: "spring", stiffness: 100, damping: 15 }}
+        >
           {workSections.map((section) => (
             <div
               className="flex justify-center mt-8 flex-col"
@@ -107,7 +118,7 @@ const Work: FC = () => {
               and Digital layouts, Adobe Suite proficiency, Figma proficiency.
             </p>
           </div>
-        </div>
+        </motion.div>
         <div className="flex justify-center w-full md:w-fit">
           <div className="flex flex-row w-full gap-6 flex-wrap mt-8 mb-[98px] 2xl:max-w-[700px] mt-0">
             {ProjectList.map((project) => (

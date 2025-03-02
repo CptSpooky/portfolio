@@ -8,6 +8,7 @@ import LinkedInIcon from '@assets/icons/LinkedIn_icon.svg';
 import PhoneIcon from '@assets/icons/phone-solid.svg';
 import EmailIcon from '@assets/icons/envelope-solid.svg';
 import AboutImg from '@assets/about.svg';
+import { motion } from 'framer-motion';
 
 interface IconButtons {
   icon: string;
@@ -35,11 +36,21 @@ const About: FC = () => {
   ];
   return (
     <div className="flex items-center w-full m-12 flex-col mb-0">
-      <div className="flex flex-row justify-center items-center gap-4">
+      <motion.div
+        className="flex flex-row justify-center items-center gap-4"
+        initial={{ y: -100, opacity: 0 }} // Start off-screen to the top
+        animate={{ y: 0, opacity: 1 }} // Slide into place
+        transition={{ type: "spring", stiffness: 100, damping: 15 }}
+      >
         <h2 className="text-center">About</h2>
         <h1 className="text-center pt-[10px] md:pt-0 lg:pt-0">Me</h1>
-      </div>
-      <div className="flex justify-center items-center mt-8 flex-col md:w-[40%] text-center gap-4">
+      </motion.div>
+      <motion.div
+        className="flex justify-center items-center mt-8 flex-col md:w-[40%] text-center gap-4"
+        initial={{ y: -100, opacity: 0 }} // Start off-screen to the top
+        animate={{ y: 0, opacity: 1 }} // Slide into place
+        transition={{ type: "spring", stiffness: 100, damping: 15 }}
+      >
         <p>
           Highly-motivated remote Full Stack Web Developer with a background in
           Graphic Design. Effective at problem solving and weaving in creativity
@@ -53,10 +64,19 @@ const About: FC = () => {
           husband.
         </p>
         <h3 className="font-bold mt-8">Get to know me!</h3>
-      </div>
+      </motion.div>
       <div className="flex justify-center items-center mt-12 mb-[98px] flex-col gap-8 md:flex-row md:gap-16 lg:gap-24">
         {iconButtons.map((item) => (
-          <div className="flex flex-col items-center gap-2" key={item.alt}>
+          <motion.div 
+            className="flex flex-col items-center gap-2" key={item.alt}
+            initial={{ scale: 0.3, opacity: 0, y: 50 }}
+            animate={{ scale: 1, opacity: 1, y: 0 }}
+            transition={{ 
+              type: 'spring',
+              stiffness: 500,
+              damping: 20,
+            }}
+          >
             <button
               key={item.alt}
               className="btn btn-xl btn-circle btn-primary drop-shadow-lg"
@@ -70,7 +90,7 @@ const About: FC = () => {
             <div className="text-sm text-slate-700 font-bold mt-2 text-center text-wrap">
               {item.text}
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
       <img

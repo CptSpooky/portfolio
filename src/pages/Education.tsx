@@ -5,6 +5,7 @@
 
 import { FC } from 'react';
 import EducationImg from '@assets/education.svg';
+import { motion } from 'framer-motion';
 
 interface EducationSections {
   title: string;
@@ -47,7 +48,12 @@ const Education: FC = () => {
   ];
   return (
     <div className="flex flex-row w-full m-12 flex-wrap lg:flex-nowrap">
-      <div className="flex flex-col justify-center">
+      <motion.div
+        className="flex flex-col justify-center"
+        initial={{ x: -100, opacity: 0 }} // Start off-screen to the left
+        animate={{ x: 0, opacity: 1 }} // Slide into place
+        transition={{ type: "spring", stiffness: 100, damping: 15 }}
+      >
         <div className="flex flex-col md:flex-row md:gap-4 md:items-center">
           <h2 className="mb-3 md:text-center">My</h2>
           <h1 className="mb-3 md:text-center">Education</h1>
@@ -62,11 +68,20 @@ const Education: FC = () => {
             <p className="body-text">{section.description}</p>
           </div>
         ))}
-      </div>
+      </motion.div>
 
-      <div className="flex justify-center items-center mt-8 md:w-[100%] lg:w-[70%]">
-        <img alt="EducationImg" src={EducationImg} className="max-h-[900px]" />
-      </div>
+      <motion.div
+        className="flex justify-center items-center mt-8 md:w-[100%] lg:w-[70%]"
+        initial={{ y: -100, opacity: 0 }} // Start off-screen to the top
+        animate={{ y: 0, opacity: 1 }} // Slide into place
+        transition={{ type: "spring", stiffness: 100, damping: 15 }}
+      >
+        <img 
+          alt="EducationImg"
+          src={EducationImg}
+          className="max-h-[900px]"
+        />
+      </motion.div>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import { useState, FC } from 'react';
 import XMarkIcon from '@assets/icons/xmark-solid.svg';
 import { ProjectCardTypes } from '@models/ProjectCard.types.ts';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const ProjectCard: FC<ProjectCardTypes> = ({
   title,
@@ -44,7 +45,12 @@ const ProjectCard: FC<ProjectCardTypes> = ({
           className="fixed inset-0 bg-slate-900/50 flex justify-center items-center z-50"
           onClick={() => setIsModalOpen(false)}
         >
-          <div
+          <AnimatePresence>
+          <motion.div
+            initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: -100, opacity: 1 }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
             className="w-full h-full overflow-auto bg-white rounded-xl shadow-xl relative flex flex-col sm:w-[90%] sm:!h-fit max-w-lg"
             onClick={(e) => e.stopPropagation()} // Prevent modal from closing when clicking inside
           >
@@ -108,7 +114,8 @@ const ProjectCard: FC<ProjectCardTypes> = ({
                 {description}
               </p>
             </div>
-          </div>
+          </motion.div>
+          </AnimatePresence>
         </div>
       )}
     </>
