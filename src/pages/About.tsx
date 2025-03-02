@@ -97,7 +97,7 @@ const About: FC = () => {
       <img
         alt="about"
         src={AboutImg}
-        className="lg:max-h-[700px] md:max-h-[400px]"
+        className="mb-[18px] md:mb-0 lg:max-h-[700px] md:max-h-[400px]"
       />
     </div>
   );

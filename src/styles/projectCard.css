@@ -1,5 +1,14 @@
 @layer components {
-    .__carsdfsdfsf {
-      @apply flex w-full min-h-screen bg-[url('../assets/paperbg.jpg')] bg-no-repeat bg-cover bg-center;
+    .__proejct-img-carousel {
+      @apply w-full h-64 overflow-auto scroll-smooth rounded-t-xl;
     }
-  }
+  
+    .__project-img-carousel::-webkit-scrollbar {
+      display: none;
+    }
+  
+    .__project-img-carousel {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+}

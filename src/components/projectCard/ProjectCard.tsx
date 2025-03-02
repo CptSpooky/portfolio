@@ -28,7 +28,7 @@ const ProjectCard: FC<ProjectCardTypes> = ({
     <>
       {/* Project Card */}
       <div
-        className="relative max-w-[300px] max-h-[190px] rounded-lg overflow-hidden cursor-pointer group shadow-xl md:min-w-[300px] min-h-[190px]"
+        className="relative max-w-[300px] max-h-[190px] rounded-lg overflow-hidden cursor-pointer group shadow-xl sm:min-w-[300px] md:min-h-[190px]"
         onClick={() => setIsModalOpen(true)}
       >
         <img
@@ -72,40 +72,45 @@ const ProjectCard: FC<ProjectCardTypes> = ({
 
               {/* Image Carousel (Top) */}
               <div className="relative">
-                <div className="w-full h-64 overflow-auto rounded-t-xl">
+                <div className="__project-img-carousel">
                   <img
                     src={images[currentIndex]}
                     alt={`Slide ${currentIndex + 1}`}
-                    className="w-full object-cover"
+                    className="w-full min-h-64 object-cover"
                   />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/50 pointer-events-none rounded-t-xl" />
-                {/* Navigation Arrows */}
-                <button
-                  className="absolute left-2 top-1/2 p-2 btn btn-circle btn-ghost hover:bg-slate-800"
-                  onClick={prevSlide}
-                >
-                  ❮
-                </button>
-                <button
-                  className="absolute right-2 top-1/2 p-2  btn btn-circle btn-ghost hover:bg-slate-800"
-                  onClick={nextSlide}
-                >
-                  ❯
-                </button>
+                <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30  bg-gradient-to-t from black/30 via transparent to-black/0 pointer-events-none rounded-t-xl" />
 
-                {/* Dots Navigation */}
-                <div className="absolute bottom-0 w-full p-2 flex justify-center mt-2">
-                  {images.map((_, index) => (
+                { images.length > 1 && (
+                  <>
+                    {/* Navigation Arrows */}
                     <button
-                      key={index}
-                      className={`h-2 w-2 mx-1 rounded-full ${
-                        currentIndex === index ? 'bg-white' : 'bg-white/70'
-                      }`}
-                      onClick={() => setCurrentIndex(index)}
-                    />
-                  ))}
-                </div>
+                      className="absolute left-2 top-1/2 p-2 btn btn-circle btn-ghost hover:bg-slate-800"
+                      onClick={prevSlide}
+                    >
+                      ❮
+                    </button>
+                    <button
+                      className="absolute right-2 top-1/2 p-2  btn btn-circle btn-ghost hover:bg-slate-800"
+                      onClick={nextSlide}
+                    >
+                      ❯
+                    </button>
+
+                    {/* Dots Navigation */}
+                    <div className="absolute bottom-0 w-full p-2 flex justify-center mt-2">
+                      {images.map((_, index) => (
+                        <button
+                          key={index}
+                          className={`h-2 w-2 mx-1 rounded-full ${
+                            currentIndex === index ? 'bg-white' : 'bg-white/70'
+                          }`}
+                          onClick={() => setCurrentIndex(index)}
+                        />
+                      ))}
+                    </div>
+                  </>
+                )}
               </div>
 
               {/* Card Body */}
