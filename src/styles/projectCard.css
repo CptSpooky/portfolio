@@ -1,14 +1,78 @@
 @layer components {
-    .__proejct-img-carousel {
+    .__project-thumbnail-card {
+        @apply relative max-w-[300px] max-h-[190px] rounded-lg overflow-hidden cursor-pointer shadow-xl sm:min-w-[300px] md:min-h-[190px];
+    }
+
+    .__project-thumbnail-card-overlay {
+        @apply absolute inset-0 bg-slate-900 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-slate-900/70 transition-opacity;
+    }
+
+    .__project-thumbnail {
+        @apply w-full h-full object-cover;
+    }
+
+    .__project-thumbnail-title {
+        @apply text-white text-lg font-semibold text-center max-w-[250px];
+    }
+
+    .__project-card {
+        @apply w-full h-full overflow-auto bg-white rounded-xl shadow-xl relative flex flex-col sm:w-[90%] sm:!h-fit max-w-lg;
+    }
+
+    .__project-img-carousel {
       @apply w-full h-64 overflow-auto scroll-smooth rounded-t-xl;
     }
   
     .__project-img-carousel::-webkit-scrollbar {
       display: none;
     }
+
+    .__project-img-carousel-left {
+       @apply absolute left-2 top-1/2 p-2 btn btn-circle btn-ghost hover:bg-slate-800;
+    }
+
+    .__project-img-carousel-right {
+        @apply absolute right-2 top-1/2 p-2  btn btn-circle btn-ghost hover:bg-slate-800;
+     }
+    
+    .__project-img-carousel-dots {
+        @apply absolute bottom-0 w-full p-2 flex justify-center mt-2;
+    }
+
+    .__project-img {
+        @apply w-full min-h-64 object-cover;
+    }
+
+    .__project_img_overlay {
+        @apply absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30  bg-gradient-to-t from-black/30 via-transparent to-black/0 pointer-events-none rounded-t-xl;
+    }
+
+    .__modal-overlay {
+        @apply fixed inset-0 bg-slate-900/50 flex justify-center items-center z-50;
+    }
   
     .__project-img-carousel {
       -ms-overflow-style: none; /* IE and Edge */
       scrollbar-width: none; /* Firefox */
+    }
+
+    .__card-body {
+        @apply p-5 flex flex-col justify-center items-center;
+    }
+
+    .__card-title {
+        @apply text-[1.5rem]/[2.4rem] font-bold text-slate-800 text-center;
+    }
+
+    .__card-subtitle {
+        @apply text-[1.2rem] text-primary-purple text-center;
+    }
+
+    .__card-text {
+        @apply text-[1.2rem]/[2rem] text-slate-800 text-center;
+    }
+
+    .__close-btn {
+        @apply absolute top-2 right-2 btn btn-ghost btn-circle z-50 hover:bg-slate-800;
     }
 }

@@ -23,7 +23,7 @@ const PageLayout: FC = () => {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.2 }}
       >
-        <div className="flex w-full min-h-screen bg-[url('../assets/paperbg.jpg')] bg-no-repeat bg-cover bg-center">
+        <div className="__page-layout">
           <Nav />
           <Outlet />
         </div>

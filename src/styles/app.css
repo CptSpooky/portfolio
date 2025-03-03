@@ -23,19 +23,16 @@
     @apply text-[1.5rem]/[2.4rem] text-slate-800;
   }
 
-  .body-text {
+  .__body-text {
     @apply text-[1.2rem]/[2rem] text-slate-800;
   }
 
-  .card-title {
-    @apply text-[1.5rem]/[2.4rem] font-bold text-slate-800;
+  .__page-layout {
+    @apply flex w-full min-h-screen bg-[url('../assets/paperbg.jpg')] bg-no-repeat bg-cover bg-center;
   }
 
-  .card-subtitle {
-    @apply text-[1.2rem] text-slate-700;
+  .__sections-page {
+    @apply flex flex-col w-full m-12 flex-wrap lg:flex-nowrap;
   }
 
-  .card-body {
-    @apply text-[1.2rem]/[2rem] text-slate-800;
-  }
 }
