@@ -27,11 +27,11 @@
       display: none;
     }
 
-    .__project-img-carousel-left {
+    .__project-img-carousel-arrow-left {
        @apply absolute left-2 top-1/2 p-2 btn btn-circle btn-ghost hover:bg-slate-800;
     }
 
-    .__project-img-carousel-right {
+    .__project-img-carousel-arrow-right {
         @apply absolute right-2 top-1/2 p-2  btn btn-circle btn-ghost hover:bg-slate-800;
      }
     
