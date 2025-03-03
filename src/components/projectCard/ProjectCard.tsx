@@ -31,24 +31,15 @@ const ProjectCard: FC<ProjectCardTypes> = ({
         className="__project-thumbnail-card"
         onClick={() => setIsModalOpen(true)}
       >
-        <img
-          src={thumbnail}
-          alt={title}
-          className="__project-thumbnail"
-        />
+        <img src={thumbnail} alt={title} className="__project-thumbnail" />
         <div className="__project-thumbnail-card-overlay">
-          <h3 className="__project-thumbnail-title">
-            {title}
-          </h3>
+          <h3 className="__project-thumbnail-title">{title}</h3>
         </div>
       </div>
 
       {/* Modal */}
       {isModalOpen && (
-        <div
-          className="__modal-overlay"
-          onClick={() => setIsModalOpen(false)}
-        >
+        <div className="__modal-overlay" onClick={() => setIsModalOpen(false)}>
           {/* Project Card */}
           <AnimatePresence>
             <motion.div
@@ -116,15 +107,9 @@ const ProjectCard: FC<ProjectCardTypes> = ({
 
               {/* Card Body */}
               <div className="__card-body">
-                <h3 className="__card-title">
-                  {title}
-                </h3>
-                <h3 className="__card-subtitle">
-                  {subtitle}
-                </h3>
-                <p className="__card-text">
-                  {description}
-                </p>
+                <h3 className="__card-title">{title}</h3>
+                <h3 className="__card-subtitle">{subtitle}</h3>
+                <p className="__card-text">{description}</p>
               </div>
             </motion.div>
           </AnimatePresence>

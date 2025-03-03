@@ -1,12 +1,12 @@
 export interface BulletPointSection {
-    text: string;
-    icon: string;
-    alt: string;
+  text: string;
+  icon: string;
+  alt: string;
 }
-  
+
 export interface InfoSection {
-    title: string;
-    date: string;
-    description: string;
-    bulletPoints?: BulletPointSection[];
+  title: string;
+  date: string;
+  description: string;
+  bulletPoints?: BulletPointSection[];
 }
