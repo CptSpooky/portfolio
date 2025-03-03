@@ -1,11 +1,11 @@
 /**
  * @name ProjectCard
- * @description Component for each individual project card
+ * @description Component for each project card, displays a card modal with project information and images
  */
 import { useState, FC } from 'react';
-import XMarkIcon from '@assets/icons/xmark-solid.svg';
-import { ProjectCardTypes } from '@models/ProjectCard.types.ts';
 import { motion, AnimatePresence } from 'framer-motion';
+import { ProjectCardTypes } from '@models/ProjectCard.types.ts';
+import XMarkIcon from '@assets/icons/xmark-solid.svg';
 
 const ProjectCard: FC<ProjectCardTypes> = ({
   title,
@@ -26,18 +26,18 @@ const ProjectCard: FC<ProjectCardTypes> = ({
 
   return (
     <>
-      {/* Project Card */}
+      {/* Project Thumbnail Card */}
       <div
-        className="relative max-w-[300px] max-h-[190px] rounded-lg overflow-hidden cursor-pointer group shadow-xl sm:min-w-[300px] md:min-h-[190px]"
+        className="__project-thumbnail-card"
         onClick={() => setIsModalOpen(true)}
       >
         <img
           src={thumbnail}
           alt={title}
-          className="w-full h-full object-cover"
+          className="__project-thumbnail"
         />
-        <div className="absolute inset-0 bg-slate-900 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-slate-900/70 transition-opacity">
-          <h3 className="text-white text-lg font-semibold text-center max-w-[250px]">
+        <div className="__project-thumbnail-card-overlay">
+          <h3 className="__project-thumbnail-title">
             {title}
           </h3>
         </div>
@@ -46,21 +46,22 @@ const ProjectCard: FC<ProjectCardTypes> = ({
       {/* Modal */}
       {isModalOpen && (
         <div
-          className="fixed inset-0 bg-slate-900/50 flex justify-center items-center z-50"
+          className="__modal-overlay"
           onClick={() => setIsModalOpen(false)}
         >
+          {/* Project Card */}
           <AnimatePresence>
             <motion.div
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -100, opacity: 1 }}
               transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-              className="w-full h-full overflow-auto bg-white rounded-xl shadow-xl relative flex flex-col sm:w-[90%] sm:!h-fit max-w-lg"
+              className="__project-card"
               onClick={(e) => e.stopPropagation()} // Prevent modal from closing when clicking inside
             >
               {/* Close Button */}
               <button
-                className="absolute top-2 right-2 btn btn-ghost btn-circle z-50 hover:bg-slate-800"
+                className="__close-btn"
                 onClick={() => setIsModalOpen(false)}
               >
                 <img
@@ -76,29 +77,29 @@ const ProjectCard: FC<ProjectCardTypes> = ({
                   <img
                     src={images[currentIndex]}
                     alt={`Slide ${currentIndex + 1}`}
-                    className="w-full min-h-64 object-cover"
+                    className="__project-img"
                   />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30  bg-gradient-to-t from black/30 via transparent to-black/0 pointer-events-none rounded-t-xl" />
+                <div className="__project-img-overlay" />
 
                 {images.length > 1 && (
                   <>
                     {/* Navigation Arrows */}
                     <button
-                      className="absolute left-2 top-1/2 p-2 btn btn-circle btn-ghost hover:bg-slate-800"
+                      className="__project-img-carousel-arrow-left"
                       onClick={prevSlide}
                     >
                       ❮
                     </button>
                     <button
-                      className="absolute right-2 top-1/2 p-2  btn btn-circle btn-ghost hover:bg-slate-800"
+                      className="__project-img-carousel-arrow-right"
                       onClick={nextSlide}
                     >
                       ❯
                     </button>
 
                     {/* Dots Navigation */}
-                    <div className="absolute bottom-0 w-full p-2 flex justify-center mt-2">
+                    <div className="__project-img-carousel-dots">
                       {images.map((_, index) => (
                         <button
                           key={index}
@@ -114,14 +115,14 @@ const ProjectCard: FC<ProjectCardTypes> = ({
               </div>
 
               {/* Card Body */}
-              <div className="p-5 flex flex-col justify-center items-center">
-                <h3 className="card-title text-slate-900 text-center">
+              <div className="__card-body">
+                <h3 className="__card-title">
                   {title}
                 </h3>
-                <h3 className="card-subtitle text-primary-purple text-center">
+                <h3 className="__card-subtitle">
                   {subtitle}
                 </h3>
-                <p className="card-body text-slate-800 text-center">
+                <p className="__card-text">
                   {description}
                 </p>
               </div>

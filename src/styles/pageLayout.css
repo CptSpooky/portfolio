@@ -1,5 +1,0 @@
-@layer components {
-  .__page-layout {
-    @apply flex w-full min-h-screen bg-[url('../assets/paperbg.jpg')] bg-no-repeat bg-cover bg-center;
-  }
-}

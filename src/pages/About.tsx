@@ -3,19 +3,13 @@
  * @description Container to render the about page
  */
 import { FC } from 'react';
+import { motion } from 'framer-motion';
+import { IconButtons } from '@models/IconButtons.types';
 import GithubIcon from '@assets/icons/github.svg';
 import LinkedInIcon from '@assets/icons/LinkedIn_icon.svg';
 import PhoneIcon from '@assets/icons/phone-solid.svg';
 import EmailIcon from '@assets/icons/envelope-solid.svg';
 import AboutImg from '@assets/about.svg';
-import { motion } from 'framer-motion';
-
-interface IconButtons {
-  icon: string;
-  alt: string;
-  link?: string;
-  text: string;
-}
 
 const About: FC = () => {
   const iconButtons: IconButtons[] = [
