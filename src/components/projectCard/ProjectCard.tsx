@@ -71,7 +71,7 @@ const ProjectCard: FC<ProjectCardTypes> = ({
                     className="__project-img"
                   />
                 </div>
-                <div className="__project-img-overlay" />
+                <div className="__project_img_overlay" />
 
                 {images.length > 1 && (
                   <>

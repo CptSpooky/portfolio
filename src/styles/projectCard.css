@@ -28,15 +28,15 @@
     }
 
     .__project-img-carousel-arrow-left {
-       @apply absolute left-2 top-1/2 p-2 btn btn-circle btn-ghost hover:bg-slate-800;
+       @apply absolute left-2 top-1/2 p-2 btn btn-circle btn-ghost border-none bg-slate-200/30 hover:bg-slate-800;
     }
 
     .__project-img-carousel-arrow-right {
-        @apply absolute right-2 top-1/2 p-2  btn btn-circle btn-ghost hover:bg-slate-800;
+        @apply absolute right-2 top-1/2 p-2  btn btn-circle btn-ghost border-none bg-slate-200/30 hover:bg-slate-800;
      }
     
     .__project-img-carousel-dots {
-        @apply absolute bottom-0 w-full p-2 flex justify-center mt-2;
+        @apply absolute bottom-0 w-full p-2 flex justify-center mt-2 bg-gradient-to-t from-slate-900/30 via-slate-900/20 to-black/0;
     }
 
     .__project-img {
@@ -44,7 +44,7 @@
     }
 
     .__project_img_overlay {
-        @apply absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30  bg-gradient-to-t from-black/30 via-transparent to-black/0 pointer-events-none rounded-t-xl;
+        @apply absolute inset-0 bg-gradient-to-r from-black/30 via-black/0 to-black/30 pointer-events-none rounded-t-xl;
     }
 
     .__modal-overlay {
