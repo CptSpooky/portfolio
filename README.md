@@ -6,6 +6,16 @@ npm run deploy
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules. Node v23.8.0
+To run:
+```
+npm i
+npm run dev
+```
+
+To build:
+```
+npm run build
+```
 
 Currently, two official plugins are available:
 
