@@ -46,15 +46,11 @@ const About: FC = () => {
         transition={{ type: 'spring', stiffness: 100, damping: 15 }}
       >
         <p>
-          Highly-motivated remote Full Stack Web Developer with a background in
-          Graphic Design. Effective at problem solving and weaving in creativity
-          with function. Known among coworkers and clients for being versatile
-          and reliable, works well both individually led and in a team
-          environment.
+          Hi there! I'm a highly-motivated remote Full Stack Web Developer and UI/UX Designer with a background in
+          Graphic Design. Among my coworkers I am known as an effective and creative problem solver, as well as being versatile and reliable! Got a team project, or need me to take the lead and get things done on my own? No problem.
         </p>
         <p>
-          Novice scuba diver. Local menace. I like sushi, art, chickens, playing
-          video games with the family, and this one real cool dude called
+          When I'm not working I like to eat sushi, create art, take care of my reptiles, play video games with the family, and I love hanging out with this one real cool dude called
           husband.
         </p>
         <h3 className="font-bold mt-8">Get to know me!</h3>
