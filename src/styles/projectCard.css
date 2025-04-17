@@ -4,7 +4,7 @@
     }
 
     .__project-thumbnail-card-overlay {
-        @apply absolute inset-0 bg-slate-900 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-slate-900/70 transition-opacity;
+        @apply absolute inset-0 bg-slate-900 flex items-center justify-center opacity-0 hover:opacity-100 bg-slate-900/70 transition-opacity;
     }
 
     .__project-thumbnail {
