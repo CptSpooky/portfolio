@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { FC } from 'react';
 import PageLayout from '@layouts/PageLayout';
 import Home from '@pages/Home';
@@ -8,7 +8,7 @@ import Work from '@pages/Work';
 
 const Router: FC = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<PageLayout />}>
           <Route index element={<Home />} />
@@ -17,7 +17,7 @@ const Router: FC = () => {
           <Route path="/work" element={<Work />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
