@@ -34,5 +34,13 @@
   .__sections-page {
     @apply flex flex-col w-full m-12 flex-wrap lg:flex-nowrap;
   }
+  
+  .__navbar-desktop {
+    @apply bg-[#191e24] shadow-md flex-col pt-4 transition-all justify-between pb-4 hidden md:flex sticky left-0 top-0 h-screen;
+  }
+
+  .__navbar-mobile {
+    @apply fixed bottom-0 left-0 w-full bg-[#191e24] shadow-md flex md:hidden justify-around p-2 z-10;
+  }
 
 }
